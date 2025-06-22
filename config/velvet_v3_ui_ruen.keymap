@@ -97,13 +97,13 @@
         };
 
         Lang-En {
-            bindings = <&to_en>;
+            bindings = <&layer_en>;
             key-positions = <2 3>;
             layers = <1>;
         };
 
         Lang-Ru {
-            bindings = <&none>;
+            bindings = <&layer_ru>;
             key-positions = <2 3>;
             layers = <0>;
         };
