@@ -233,7 +233,7 @@
             bindings = <
 &kp DOLLAR  &kp N1     &kp N2  &kp N3     &kp N4     &kp N5                             &kp N6    &kp N7          &kp N8    &kp N9     &kp N0     &kp BACKSPACE
 &kp TAB     &kp ASTRK  &kp AT  &kp CARET  &kp PRCNT  &kp BSLH                           &kp EXCL  &kp HOME        &kp UP    &kp END    &kp PG_UP  &kp DELETE
-&kp LSHFT   &kp HASH   &kp LT  &kp GT     &kp AMPS   &kp QMARK                          &kp DOT   &kp LEFT        &kp DOWN  &kp RIGHT  &kp PG_DN  &kp PSCRN
+&kp LSHFT   &kp HASH   &kp LT  &kp AMPS   &kp GT     &kp QMARK                          &kp DOT   &kp LEFT        &kp DOWN  &kp RIGHT  &kp PG_DN  &kp PSCRN
                        &trans  &trans     &kp LGUI   &kp SPACE  &kp LCTRL    &kp ENTER  &kp LALT  &cap_sen 5 MB1  &trans    &trans
             >;
 
@@ -246,7 +246,7 @@
             bindings = <
 &en DOLLAR  &kp N1     &kp N2  &kp N3     &kp N4     &kp N5                             &kp N6    &kp N7          &kp N8    &kp N9     &kp N0     &kp BACKSPACE
 &kp TAB     &kp ASTRK  &en AT  &en CARET  &kp PRCNT  &en BSLH                           &kp EXCL  &kp HOME        &kp UP    &kp END    &kp PG_UP  &kp DELETE
-&kp LSHFT   &en HASH   &en LT  &en GT     &en AMPS   &en QMARK                          &en DOT   &kp LEFT        &kp DOWN  &kp RIGHT  &kp PG_DN  &kp PSCRN
+&kp LSHFT   &en HASH   &en LT  &en AMPS   &en GT     &en QMARK                          &en DOT   &kp LEFT        &kp DOWN  &kp RIGHT  &kp PG_DN  &kp PSCRN
                        &trans  &trans     &kp LGUI   &kp SPACE  &kp LCTRL    &kp ENTER  &kp LALT  &cap_sen 5 MB1  &trans    &trans
             >;
 
@@ -268,7 +268,7 @@
             bindings = <
 &trans  &trans  &trans  &trans  &mkp MB2  &mkp MB1                    &trans  &mkp MB1  &mkp MB2  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &mo 6     &mo 7                       &trans  &mo 7     &mo 6     &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans    &mkp MB3                    &trans  &trans    &trans    &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans    &mkp MB3                    &trans  &mkp MB3  &trans    &trans  &trans  &trans
                 &trans  &trans  &trans    &trans    &trans    &trans  &trans  &trans    &trans    &trans
             >;
 
@@ -295,16 +295,6 @@
             >;
 
             label = "mouse-sniper";
-        };
-
-        sym_ru {
-            display-name = "sym_ru";
-            bindings = <
-&kp RU_CYRILLIC_IO  &en HASH  &en LT    &kp EQUAL     &en GT       &en GRAVE                       &en CARET  &kp RU_DQT  &kp UNDER    &en SQT   &trans      &trans
-&kp RU_NUMERO       &trans    &kp LPAR  &kp MINUS     &kp RPAR     &kp PLUS                        &kp PRCNT  &en LBRC    &kp RU_SEMI  &kp RBRC  &kp EXCL    &kp RU_QMARK
-&trans              &trans    &trans    &kp RU_COLON  &kp RU_FSLH  &en DLLR                        &en AT     &en PIPE    &en TILDE    &en AMPS  &kp RU_DOT  &trans
-                              &trans    &trans        &trans       &mo 4      &trans    &kp ENTER  &trans     &trans      &en LBKT     &en RBKT
-            >;
         };
     };
 };
