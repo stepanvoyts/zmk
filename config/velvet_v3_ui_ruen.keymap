@@ -155,6 +155,12 @@
             key-positions = <31 32>;
             layers = <2>;
         };
+
+        SystemAndFKeysLayer {
+            bindings = <&mo 4>;
+            key-positions = <39 41>;
+            layers = <0 1>;
+        };
     };
 
     macros {
@@ -225,10 +231,10 @@
 
         NavigationAndSymbolsEn {
             bindings = <
-&kp ESC    &kp N1      &kp N2  &kp N3           &kp N4     &kp N5                             &kp N6    &kp N7          &kp N8    &kp N9     &kp N0     &kp BACKSPACE
-&kp TAB    &kp DOLLAR  &kp AT  &mt CARET ASTRK  &kp PRCNT  &kp BSLH                           &kp EXCL  &kp HOME        &kp UP    &kp END    &kp PG_UP  &kp DELETE
-&kp LSHFT  &kp HASH    &kp LT  &kp GT           &kp AMPS   &kp QMARK                          &kp DOT   &kp LEFT        &kp DOWN  &kp RIGHT  &kp PG_DN  &kp PSCRN
-                       &trans  &trans           &kp LGUI   &kp SPACE  &kp LCTRL    &kp ENTER  &kp LALT  &cap_sen 5 MB1  &trans    &trans
+&kp DOLLAR  &kp N1     &kp N2  &kp N3     &kp N4     &kp N5                             &kp N6    &kp N7          &kp N8    &kp N9     &kp N0     &kp BACKSPACE
+&kp TAB     &kp ASTRK  &kp AT  &kp CARET  &kp PRCNT  &kp BSLH                           &kp EXCL  &kp HOME        &kp UP    &kp END    &kp PG_UP  &kp DELETE
+&kp LSHFT   &kp HASH   &kp LT  &kp GT     &kp AMPS   &kp QMARK                          &kp DOT   &kp LEFT        &kp DOWN  &kp RIGHT  &kp PG_DN  &kp PSCRN
+                       &trans  &trans     &kp LGUI   &kp SPACE  &kp LCTRL    &kp ENTER  &kp LALT  &cap_sen 5 MB1  &trans    &trans
             >;
 
             display-name = "nav";
@@ -238,10 +244,10 @@
         NavigationAndSymbolsRu {
             display-name = "nav";
             bindings = <
-&kp ESC    &kp N1      &kp N2  &kp N3             &kp N4     &kp N5                                    &kp N6    &kp N7          &kp N8    &kp N9     &kp N0     &kp BACKSPACE
-&kp TAB    &kp DOLLAR  &en AT  &mt CARET RU_STAR  &kp PRCNT  &kp RU_BACKSLASH                          &kp EXCL  &kp HOME        &kp UP    &kp END    &kp PG_UP  &kp DELETE
-&kp LSHFT  &kp HASH    &en LT  &en GT             &kp AMPS   &kp QMARK                                 &kp DOT   &kp LEFT        &kp DOWN  &kp RIGHT  &kp PG_DN  &kp PSCRN
-                       &trans  &trans             &kp LGUI   &kp SPACE         &kp LCTRL    &kp ENTER  &kp LALT  &cap_sen 5 MB1  &trans    &trans
+&en DOLLAR  &kp N1     &kp N2  &kp N3     &kp N4     &kp N5                             &kp N6    &kp N7          &kp N8    &kp N9     &kp N0     &kp BACKSPACE
+&kp TAB     &kp ASTRK  &en AT  &en CARET  &kp PRCNT  &en BSLH                           &kp EXCL  &kp HOME        &kp UP    &kp END    &kp PG_UP  &kp DELETE
+&kp LSHFT   &en HASH   &en LT  &en GT     &en AMPS   &en QMARK                          &en DOT   &kp LEFT        &kp DOWN  &kp RIGHT  &kp PG_DN  &kp PSCRN
+                       &trans  &trans     &kp LGUI   &kp SPACE  &kp LCTRL    &kp ENTER  &kp LALT  &cap_sen 5 MB1  &trans    &trans
             >;
 
             label = "nav-sym-ru";
