@@ -95,6 +95,18 @@
             key-positions = <31 32>;
             layers = <0 1>;
         };
+
+        Lang-En {
+            bindings = <&to_en>;
+            key-positions = <2 3>;
+            layers = <1>;
+        };
+
+        Lang-Ru {
+            bindings = <&none>;
+            key-positions = <2 3>;
+            layers = <0>;
+        };
     };
 
     macros {
