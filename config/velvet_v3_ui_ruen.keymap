@@ -21,7 +21,45 @@
         };
     };
 
-    combos { compatible = "zmk,combos"; };
+    combos {
+        compatible = "zmk,combos";
+
+        l-par {
+            bindings = <&kp LPAR>;
+            key-positions = <4 5>;
+            layers = <0 1>;
+        };
+
+        r-par {
+            bindings = <&kp RPAR>;
+            key-positions = <7 6>;
+            layers = <0 1>;
+        };
+
+        l-bracket {
+            bindings = <&kp LBKT>;
+            key-positions = <17 16>;
+            layers = <0 1>;
+        };
+
+        r-bracket {
+            bindings = <&kp RBKT>;
+            key-positions = <19 18>;
+            layers = <0 1>;
+        };
+
+        l-brace {
+            bindings = <&kp LBRC>;
+            key-positions = <28 29>;
+            layers = <0 1>;
+        };
+
+        r-brace {
+            bindings = <&kp RBRC>;
+            key-positions = <31 30>;
+            layers = <0 1>;
+        };
+    };
 
     macros {
         to_ru: to_ru {
@@ -79,7 +117,7 @@
 
         NavAndNum {
             bindings = <
-&trans  &kp N1  &kp N2    &kp N3  &kp N4   &kp N5                    &kp N6  &kp N7    &kp N8    &kp N9     &kp N0  &trans
+&trans  &kp N1  &kp N2    &kp N3  &kp N4   &kp N5                    &kp N6  &kp N7    &kp N8    &kp N9     &kp N0  &kp BACKSPACE
 &trans  &trans  &trans    &trans  &trans   &trans                    &trans  &trans    &kp UP    &trans     &trans  &trans
 &trans  &trans  &kp HOME  &trans  &kp END  &trans                    &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &trans
                 &trans    &trans  &trans   &trans  &trans    &trans  &trans  &trans    &trans    &trans
@@ -90,10 +128,10 @@
 
         Symbols {
             bindings = <
-&trans  &kp HASH   &kp LT    &kp EQUAL  &kp GT    &kp GRAVE                    &kp CARET  &kp DQT   &kp UNDER  &kp SQT   &trans    &trans
-&trans  &kp BSLH   &trans    &kp MINUS  &trans    &kp PLUS                     &kp PRCNT  &trans    &kp SEMI   &trans    &kp EXCL  &kp QUESTION
-&trans  &kp COMMA  &kp STAR  &kp COLON  &kp FSLH  &kp DLLR                     &kp AT     &kp PIPE  &kp TILDE  &kp AMPS  &kp DOT   &trans
-                   &trans    &trans     &trans    &trans     &trans    &trans  &trans     &trans    &trans     &trans
+&trans  &trans  &kp LT    &kp EQUAL  &kp GT    &kp GRAVE                    &kp CARET  &kp DQT   &kp UNDER  &kp SQT    &trans     &kp BACKSPACE
+&trans  &trans  &kp BSLH  &kp MINUS  &kp HASH  &kp PLUS                     &kp PRCNT  &kp EXCL  &kp SEMI   &kp COMMA  &kp QMARK  &trans
+&trans  &trans  &kp STAR  &kp COLON  &kp FSLH  &kp DLLR                     &kp AT     &kp PIPE  &kp TILDE  &kp AMPS   &kp DOT    &trans
+                &trans    &trans     &trans    &trans     &trans    &trans  &trans     &trans    &trans     &trans
             >;
 
             display-name = "sym";
@@ -141,15 +179,6 @@
             >;
 
             label = "sniper";
-        };
-
-        layer_8 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-                &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-            >;
         };
     };
 };
