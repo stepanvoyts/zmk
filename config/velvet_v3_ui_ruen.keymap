@@ -24,16 +24,76 @@
     combos {
         compatible = "zmk,combos";
 
-        cmben {
-            bindings = <&layer_en>;
-            key-positions = <3 4>;
-            layers = <1>;
+        l-par {
+            bindings = <&kp LPAR>;
+            key-positions = <4 5>;
+            layers = <0 1>;
         };
 
-        cmbru {
-            bindings = <&layer_ru>;
+        r-par {
+            bindings = <&kp RPAR>;
+            key-positions = <7 6>;
+            layers = <0 1>;
+        };
+
+        l-bracket {
+            bindings = <&kp LBKT>;
+            key-positions = <17 16>;
+            layers = <0 1>;
+        };
+
+        r-bracket {
+            bindings = <&kp RBKT>;
+            key-positions = <19 18>;
+            layers = <0 1>;
+        };
+
+        l-brace {
+            bindings = <&kp LBRC>;
+            key-positions = <28 29>;
+            layers = <0 1>;
+        };
+
+        r-brace {
+            bindings = <&kp RBRC>;
+            key-positions = <31 30>;
+            layers = <0 1>;
+        };
+
+        slash {
+            bindings = <&kp SLASH>;
             key-positions = <3 4>;
-            layers = <0>;
+            layers = <0 1>;
+        };
+
+        equals-plus {
+            bindings = <&kp EQUAL>;
+            key-positions = <16 15>;
+            layers = <0 1>;
+        };
+
+        minus-underscore {
+            bindings = <&kp MINUS>;
+            key-positions = <7 8>;
+            layers = <0 1>;
+        };
+
+        colon-semi {
+            bindings = <&kp SEMI>;
+            key-positions = <19 20>;
+            layers = <0 1>;
+        };
+
+        grave-tilde {
+            bindings = <&kp GRAVE>;
+            key-positions = <27 28>;
+            layers = <0 1>;
+        };
+
+        s-d-qoute {
+            bindings = <&kp SQT>;
+            key-positions = <31 32>;
+            layers = <0 1>;
         };
     };
 
