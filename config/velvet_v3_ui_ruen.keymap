@@ -99,7 +99,7 @@
         Lang-En {
             bindings = <&layer_en>;
             key-positions = <2 3>;
-            layers = <2>;
+            layers = <1>;
         };
 
         Lang-Ru {
