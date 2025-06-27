@@ -216,10 +216,10 @@
         Russian {
             display-name = "ru";
             bindings = <
-&kp ESC    &kp RU_CYRILLIC_SHORT_I  &kp RU_CYRILLIC_TSE   &kp RU_CYRILLIC_U   &kp RU_CYRILLIC_KA  &mt RU_CYRILLIC_IO RU_CYRILLIC_IE                          &kp RU_CYRILLIC_EN  &kp RU_CYRILLIC_GHE  &kp RU_CYRILLIC_SHA                              &kp RU_CYRILLIC_SHCHA  &kp RU_CYRILLIC_ZE   &kp BSPC
-&kp TAB    &kp RU_CYRILLIC_EF       &kp RU_CYRILLIC_YERU  &kp RU_CYRILLIC_VE  &kp RU_CYRILLIC_A   &kp RU_CYRILLIC_PE                                         &kp RU_CYRILLIC_ER  &kp RU_CYRILLIC_O    &kp RU_CYRILLIC_EL                               &kp RU_CYRILLIC_DE     &kp RU_CYRILLIC_ZHE  &kp RU_CYRILLIC_E
-&kp LSHFT  &kp RU_CYRILLIC_YA       &kp RU_CYRILLIC_CHE   &kp RU_CYRILLIC_ES  &kp RU_CYRILLIC_EM  &kp RU_CYRILLIC_I                                          &kp RU_COMMA        &kp RU_CYRILLIC_TE   &mt RU_CYRILLIC_HARD_SIGN RU_CYRILLIC_SOFT_SIGN  &kp RU_CYRILLIC_DE     &kp RU_CYRILLIC_YU   &kp RU_CYRILLIC_HA
-                                    &trans                &trans              &kp LGUI            &lt 3 SPACE                        &kp LCTRL    &kp ENTER  &kp LALT            &cap_sen 5 MB1       &trans                                           &trans
+&kp ESC    &kp RU_CYRILLIC_SHORT_I  &kp RU_CYRILLIC_TSE   &kp RU_CYRILLIC_U   &kp RU_CYRILLIC_KA  &mt RU_CYRILLIC_IO RU_CYRILLIC_IE                         &kp RU_CYRILLIC_EN  &kp RU_CYRILLIC_GHE  &kp RU_CYRILLIC_SHA                              &kp RU_CYRILLIC_SHCHA  &kp RU_CYRILLIC_ZE   &kp BSPC
+&kp TAB    &kp RU_CYRILLIC_EF       &kp RU_CYRILLIC_YERU  &kp RU_CYRILLIC_VE  &kp RU_CYRILLIC_A   &kp RU_CYRILLIC_PE                                        &kp RU_CYRILLIC_ER  &kp RU_CYRILLIC_O    &kp RU_CYRILLIC_EL                               &kp RU_CYRILLIC_DE     &kp RU_CYRILLIC_ZHE  &kp RU_CYRILLIC_E
+&kp LSHFT  &kp RU_CYRILLIC_YA       &kp RU_CYRILLIC_CHE   &kp RU_CYRILLIC_ES  &kp RU_CYRILLIC_EM  &kp RU_CYRILLIC_I                                         &kp RU_COMMA        &kp RU_CYRILLIC_TE   &mt RU_CYRILLIC_HARD_SIGN RU_CYRILLIC_SOFT_SIGN  &kp RU_CYRILLIC_DE     &kp RU_CYRILLIC_YU   &kp RU_CYRILLIC_HA
+                                    &trans                &trans              &kp LGUI            &lt 3 SPACE                        &kp LCTRL    &kp LALT  &kp ENTER           &cap_sen 5 MB1       &trans                                           &trans
             >;
         };
 
@@ -249,10 +249,10 @@
 
         SystemAndFKeys {
             bindings = <
-&trans  &trans  &kp F1  &kp F2   &kp F3    &kp F4                            &trans     &kp C_VOL_DN    &kp K_MUTE  &kp C_VOL_UP  &bt BT_SEL 0  &bt BT_SEL 1
-&trans  &trans  &kp F5  &kp F6   &kp F7    &kp F8                            &trans     &trans          &trans      &trans        &bt BT_SEL 2  &bt BT_SEL 3
-&trans  &trans  &kp F9  &kp F10  &kp F11   &kp F12                           &trans     &trans          &trans      &trans        &out OUT_TOG  &bt BT_CLR
-                &trans  &trans   &kp LGUI  &kp SPACE  &kp LCTRL    &kp LALT  &kp ENTER  &cap_sen 5 MB1  &trans      &trans
+&trans  &kp F1  &kp F2   &kp F3   &kp F4    &trans                            &trans     &kp C_VOL_DN    &kp K_MUTE  &kp C_VOL_UP  &bt BT_SEL 0  &bt BT_SEL 1
+&trans  &kp F5  &kp F6   &kp F7   &kp F8    &trans                            &trans     &trans          &trans      &trans        &bt BT_SEL 2  &bt BT_SEL 3
+&trans  &kp F9  &kp F10  &kp F11  &kp F12   &trans                            &trans     &trans          &trans      &trans        &out OUT_TOG  &bt BT_CLR
+                &trans   &trans   &kp LGUI  &kp SPACE  &kp LCTRL    &kp LALT  &kp ENTER  &cap_sen 5 MB1  &trans      &trans
             >;
 
             display-name = "system-fkeys";
@@ -260,10 +260,10 @@
 
         Mouse {
             bindings = <
-&trans  &trans  &trans  &trans  &mkp MB2  &mkp MB1                    &trans  &mkp MB1  &mkp MB2  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &mo 6     &mo 7                       &trans  &mo 7     &mo 6     &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans    &mkp MB3                    &trans  &mkp MB3  &trans    &trans  &trans  &trans
-                &trans  &trans  &trans    &trans    &trans    &trans  &trans  &trans    &trans    &trans
+&trans  &trans  &trans  &mkp MB2  &mkp MB1  &trans                    &trans  &mkp MB1  &mkp MB2  &trans  &trans  &trans
+&trans  &trans  &trans  &mo 6     &mo 7     &trans                    &trans  &mo 7     &mo 6     &trans  &trans  &trans
+&trans  &trans  &trans  &trans    &mkp MB3  &trans                    &trans  &mkp MB3  &trans    &trans  &trans  &trans
+                &trans  &trans    &trans    &trans  &trans    &trans  &trans  &trans    &trans    &trans
             >;
 
             label = "mouse";
@@ -282,10 +282,10 @@
 
         Sniper {
             bindings = <
-&trans  &trans  &trans    &trans    &trans    &trans                    &trans  &trans    &trans    &trans    &trans  &trans
-&trans  &trans  &mkp MB3  &mkp MB2  &mkp MB1  &trans                    &trans  &mkp MB1  &mkp MB2  &mkp MB3  &trans  &trans
-&trans  &trans  &trans    &trans    &trans    &trans                    &trans  &trans    &trans    &trans    &trans  &trans
-                &trans    &trans    &trans    &trans  &trans    &trans  &trans  &trans    &trans    &trans
+&trans  &trans  &trans  &mkp MB2  &mkp MB1  &trans                    &trans  &mkp MB1  &mkp MB2  &trans  &trans  &trans
+&trans  &trans  &trans  &trans    &trans    &trans                    &trans  &trans    &trans    &trans  &trans  &trans
+&trans  &trans  &trans  &trans    &mkp MB3  &trans                    &trans  &mkp MB3  &trans    &trans  &trans  &trans
+                &trans  &trans    &trans    &trans  &trans    &trans  &trans  &trans    &trans    &trans
             >;
 
             label = "mouse-sniper";
