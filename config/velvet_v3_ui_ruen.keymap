@@ -249,10 +249,10 @@
 
         SystemAndFKeys {
             bindings = <
-&trans  &kp F1  &kp F2   &kp F3   &kp F4    &trans                            &trans     &kp C_VOL_DN    &kp K_MUTE  &kp C_VOL_UP  &bt BT_SEL 0  &bt BT_SEL 1
-&trans  &kp F5  &kp F6   &kp F7   &kp F8    &trans                            &trans     &trans          &trans      &trans        &bt BT_SEL 2  &bt BT_SEL 3
-&trans  &kp F9  &kp F10  &kp F11  &kp F12   &trans                            &trans     &trans          &trans      &trans        &out OUT_TOG  &bt BT_CLR
-                &trans   &trans   &kp LGUI  &kp SPACE  &kp LCTRL    &kp LALT  &kp ENTER  &cap_sen 5 MB1  &trans      &trans
+&kp ESC    &kp F1  &kp F2   &kp F3   &kp F4    &trans                            &trans     &kp C_VOL_DN    &kp K_MUTE  &kp C_VOL_UP  &bt BT_SEL 0  &bt BT_SEL 1
+&kp TAB    &kp F5  &kp F6   &kp F7   &kp F8    &trans                            &trans     &trans          &trans      &trans        &bt BT_SEL 2  &bt BT_SEL 3
+&kp RSHFT  &kp F9  &kp F10  &kp F11  &kp F12   &trans                            &trans     &trans          &trans      &trans        &out OUT_TOG  &bt BT_CLR
+                   &trans   &trans   &kp LGUI  &kp SPACE  &kp LCTRL    &kp LALT  &kp ENTER  &cap_sen 5 MB1  &trans      &trans
             >;
 
             display-name = "system-fkeys";
