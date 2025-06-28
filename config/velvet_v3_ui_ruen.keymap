@@ -27,13 +27,13 @@
         l-par {
             bindings = <&kp LPAR>;
             key-positions = <4 5>;
-            layers = <0 2>;
+            layers = <0 1>;
         };
 
         r-par {
             bindings = <&kp RPAR>;
             key-positions = <7 6>;
-            layers = <0 2>;
+            layers = <0 1>;
         };
 
         l-bracket {
@@ -69,13 +69,13 @@
         equals-plus {
             bindings = <&kp EQUAL>;
             key-positions = <16 15>;
-            layers = <0 2>;
+            layers = <0 1>;
         };
 
         minus-underscore {
             bindings = <&kp MINUS>;
             key-positions = <7 8>;
-            layers = <0 2>;
+            layers = <0 1>;
         };
 
         colon-semi {
@@ -111,49 +111,49 @@
         l-bracket-ru {
             bindings = <&en LBKT>;
             key-positions = <17 16>;
-            layers = <2>;
+            layers = <1>;
         };
 
         r-bracket-ru {
             bindings = <&en RIGHT_BRACKET>;
             key-positions = <19 18>;
-            layers = <2>;
+            layers = <1>;
         };
 
         l-brace-ru {
             bindings = <&en LBRC>;
             key-positions = <28 29>;
-            layers = <2>;
+            layers = <1>;
         };
 
         r-brace-ru {
             bindings = <&en RBRC>;
             key-positions = <31 30>;
-            layers = <2>;
+            layers = <1>;
         };
 
         slash-ru {
             bindings = <&en SLASH>;
             key-positions = <3 4>;
-            layers = <2>;
+            layers = <1>;
         };
 
         colon-semi-ru {
             bindings = <&en SEMI>;
             key-positions = <19 20>;
-            layers = <2>;
+            layers = <1>;
         };
 
         grave-tilde-ru {
             bindings = <&en GRAVE>;
             key-positions = <27 28>;
-            layers = <2>;
+            layers = <1>;
         };
 
         s-d-quoute {
             bindings = <&en SQT>;
             key-positions = <31 32>;
-            layers = <2>;
+            layers = <1>;
         };
     };
 
