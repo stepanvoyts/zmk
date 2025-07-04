@@ -225,10 +225,10 @@
 
         NavigationAndSymbolsEn {
             bindings = <
-&kp DOLLAR  &kp N1     &kp N2  &kp N3     &kp N4     &kp N5                            &kp N6     &kp N7          &kp N8    &kp N9     &kp N0     &kp BACKSPACE
-&kp TAB     &kp ASTRK  &kp AT  &kp CARET  &kp PRCNT  &kp QMARK                         &kp EXCL   &kp HOME        &kp UP    &kp END    &kp PG_UP  &kp DELETE
-&kp LSHFT   &kp HASH   &kp LT  &kp AMPS   &kp GT     &kp NUBS                          &kp DOT    &kp LEFT        &kp DOWN  &kp RIGHT  &kp PG_DN  &kp PSCRN
-                       &trans  &trans     &kp LGUI   &kp SPACE  &kp LCTRL    &kp LALT  &kp ENTER  &cap_sen 5 MB1  &trans    &trans
+&kp ESC    &kp N1    &kp N2  &kp N3     &kp N4    &kp N5                              &kp N6     &kp N7          &kp N8     &kp N9     &kp N0     &kp BACKSPACE
+&kp TAB    &kp DLLR  &kp AT  &kp QMARK  &kp EXCL  &kp PERCENT                         &kp AMPS   &kp LEFT        &kp UP     &kp DOWN   &kp RIGHT  &kp DELETE
+&kp LSHFT  &kp HASH  &kp LT  &kp CARET  &kp GT    &kp ASTRK                           &kp NUBS   &kp HOME        &kp PG_UP  &kp PG_DN  &kp END    &kp PSCRN
+                     &trans  &trans     &kp LGUI  &kp SPACE    &kp LCTRL    &kp LALT  &kp ENTER  &cap_sen 5 MB1  &trans     &trans
             >;
 
             display-name = "nav-symb-en";
@@ -238,10 +238,10 @@
         NavigationAndSymbolsRu {
             display-name = "nav-symb-ru";
             bindings = <
-&en DOLLAR  &kp N1     &kp N2  &kp N3     &kp N4     &kp N5                            &kp N6     &kp N7          &kp N8    &kp N9     &kp N0     &kp BACKSPACE
-&kp TAB     &kp ASTRK  &en AT  &en CARET  &kp PRCNT  &en QMARK                         &kp EXCL   &kp HOME        &kp UP    &kp END    &kp PG_UP  &kp DELETE
-&kp LSHFT   &en HASH   &en LT  &en AMPS   &en GT     &en NUBS                          &en DOT    &kp LEFT        &kp DOWN  &kp RIGHT  &kp PG_DN  &kp PSCRN
-                       &trans  &trans     &kp LGUI   &kp SPACE  &kp LCTRL    &kp LALT  &kp ENTER  &cap_sen 5 MB1  &trans    &trans
+&en ESC    &kp N1    &kp N2  &kp N3     &kp N4    &kp N5                            &kp N6     &kp N7          &kp N8     &kp N9         &kp N0     &kp BACKSPACE
+&kp TAB    &en DLLR  &en AT  &en QMARK  &kp EXCL  &en PRCNT                         &en AMPS   &kp LEFT        &kp UP     &kp DOWN       &kp RIGHT  &kp DELETE
+&kp LSHFT  &en HASH  &en LT  &en CARET  &en GT    &en ASTRK                         &en NUBS   &kp HOME        &kp PG_UP  &kp PAGE_DOWN  &kp END    &kp PSCRN
+                     &trans  &trans     &kp LGUI  &kp SPACE  &kp LCTRL    &kp LALT  &kp ENTER  &cap_sen 5 MB1  &trans     &trans
             >;
 
             label = "nav-sym-ru";
