@@ -204,9 +204,9 @@
 
         English {
             bindings = <
-&kp ESC    &kp Q  &kp W   &kp E   &kp R     &kp T                               &kp Y        &kp U           &kp I   &kp O   &kp P   &kp BSPC
-&kp TAB    &kp A  &kp S   &kp D   &kp F     &kp G                               &kp H        &kp J           &kp K   &kp L   &trans  &kp DOT
-&kp LSHFT  &kp Z  &kp X   &kp C   &kp V     &kp B                               &kp N        &kp M           &trans  &trans  &trans  &kp COMMA
+&kp ESC    &kp B  &kp L   &kp D   &kp W     &kp Z                               &kp J        &kp F           &kp O   &kp U   &trans  &kp BSPC
+&kp TAB    &kp N  &kp R   &kp T   &kp S     &kp G                               &kp Y        &kp H           &kp A   &kp E   &kp I   &kp DOT
+&kp LSHFT  &kp Q  &kp X   &kp M   &kp C     &kp V                               &kp K        &kp P           &trans  &trans  &trans  &kp COMMA
                   &trans  &trans  &kp LGUI  &lt 2 SPACE  &kp LCTRL    &kp LALT  &lt 4 ENTER  &cap_sen 5 MB1  &trans  &trans
             >;
 
