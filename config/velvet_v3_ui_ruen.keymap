@@ -197,13 +197,6 @@
 
             label = "EN";
         };
-
-        layer_lgui: layer_lgui {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LGUI &mo 5>;
-            label = "LAYER_LGUI";
-        };
     };
 
     keymap {
@@ -211,10 +204,10 @@
 
         English {
             bindings = <
-&kp ESC    &kp B  &kp L  &kp D  &kp W        &kp Z                        &kp J        &kp F           &kp O  &kp U  &none  &kp BSPC
-&kp TAB    &kp N  &kp R  &kp T  &kp S        &kp G                        &kp Y        &kp H           &kp A  &kp E  &kp I  &kp DOT
-&kp LSHFT  &kp Q  &kp X  &kp M  &kp C        &kp V                        &kp K        &kp P           &none  &none  &none  &kp COMMA
-                  &none  &none  &layer_lgui  &lt 2 SPACE  &mo 6    &mo 7  &lt 4 ENTER  &cap_sen 8 MB1  &none  &none
+&kp ESC    &kp B  &kp L  &kp D  &kp W  &kp Z                        &kp J        &kp F           &kp O  &kp U  &none  &kp BSPC
+&kp TAB    &kp N  &kp R  &kp T  &kp S  &kp G                        &kp Y        &kp H           &kp A  &kp E  &kp I  &kp DOT
+&kp LSHFT  &kp Q  &kp X  &kp M  &kp C  &kp V                        &kp K        &kp P           &none  &none  &none  &kp COMMA
+                  &none  &none  &mo 5  &lt 2 SPACE  &mo 6    &mo 7  &lt 4 ENTER  &cap_sen 8 MB1  &none  &none
             >;
 
             display-name = "en";
