@@ -204,10 +204,10 @@
 
         English {
             bindings = <
-&kp ESC    &kp B  &kp L   &kp D   &kp W     &kp Z                               &kp J        &kp F           &kp O   &kp U   &trans  &kp BSPC
-&kp TAB    &kp N  &kp R   &kp T   &kp S     &kp G                               &kp Y        &kp H           &kp A   &kp E   &kp I   &kp DOT
-&kp LSHFT  &kp Q  &kp X   &kp M   &kp C     &kp V                               &kp K        &kp P           &trans  &trans  &trans  &kp COMMA
-                  &trans  &trans  &kp LGUI  &lt 2 SPACE  &kp LCTRL    &kp LALT  &lt 4 ENTER  &cap_sen 5 MB1  &trans  &trans
+&kp ESC    &kp B  &kp L   &kp D   &kp W  &kp Z                               &kp J        &kp F           &kp O   &kp U   &trans  &kp BSPC
+&kp TAB    &kp N  &kp R   &kp T   &kp S  &kp G                               &kp Y        &kp H           &kp A   &kp E   &kp I   &kp DOT
+&kp LSHFT  &kp Q  &kp X   &kp M   &kp C  &kp V                               &kp K        &kp P           &trans  &trans  &trans  &kp COMMA
+                  &trans  &trans  &mo 5  &lt 2 SPACE  &kp LCTRL    &kp LALT  &lt 4 ENTER  &cap_sen 6 MB1  &trans  &trans
             >;
 
             display-name = "en";
@@ -219,7 +219,7 @@
 &kp ESC    &kp RU_CYRILLIC_SHORT_I  &kp RU_CYRILLIC_TSE   &kp RU_CYRILLIC_U   &kp RU_CYRILLIC_KA  &mt RU_CYRILLIC_IO RU_CYRILLIC_IE                         &kp RU_CYRILLIC_EN  &kp RU_CYRILLIC_GHE                              &mt RU_CYRILLIC_SHCHA RU_CYRILLIC_SHA  &kp RU_CYRILLIC_ZE  &kp RU_CYRILLIC_E    &kp BSPC
 &kp TAB    &kp RU_CYRILLIC_EF       &kp RU_CYRILLIC_YERU  &kp RU_CYRILLIC_VE  &kp RU_CYRILLIC_A   &kp RU_CYRILLIC_PE                                        &kp RU_CYRILLIC_ER  &kp RU_CYRILLIC_O                                &kp RU_CYRILLIC_EL                     &kp RU_CYRILLIC_DE  &kp RU_CYRILLIC_ZHE  &kp RU_DOT
 &kp LSHFT  &kp RU_CYRILLIC_YA       &kp RU_CYRILLIC_CHE   &kp RU_CYRILLIC_ES  &kp RU_CYRILLIC_EM  &kp RU_CYRILLIC_I                                         &kp RU_CYRILLIC_TE  &mt RU_CYRILLIC_HARD_SIGN RU_CYRILLIC_SOFT_SIGN  &kp RU_CYRILLIC_BE                     &kp RU_CYRILLIC_YU  &kp RU_CYRILLIC_HA   &kp RU_COMMA
-                                    &trans                &trans              &kp LGUI            &lt 3 SPACE                        &kp LCTRL    &kp LALT  &lt 4 ENTER         &cap_sen 5 MB1                                   &trans                                 &trans
+                                    &trans                &trans              &mo 5               &lt 3 SPACE                        &kp LCTRL    &kp LALT  &lt 4 ENTER         &cap_sen 6 MB1                                   &trans                                 &trans
             >;
         };
 
@@ -228,7 +228,7 @@
 &kp ESC    &kp N1     &kp N2  &kp N3     &kp N4    &kp N5                              &kp N6     &kp N7          &kp N8     &kp N9     &kp N0     &kp BACKSPACE
 &kp TAB    &kp ASTRK  &kp AT  &kp QMARK  &kp EXCL  &kp PERCENT                         &kp AMPS   &kp LEFT        &kp UP     &kp DOWN   &kp RIGHT  &kp DELETE
 &kp LSHFT  &kp HASH   &kp LT  &kp CARET  &kp GT    &kp DOLLAR                          &kp NUBS   &kp HOME        &kp PG_UP  &kp PG_DN  &kp END    &kp PSCRN
-                      &trans  &trans     &kp LGUI  &kp SPACE    &kp LCTRL    &kp LALT  &kp ENTER  &cap_sen 5 MB1  &trans     &trans
+                      &trans  &trans     &kp LGUI  &kp SPACE    &kp LCTRL    &kp LALT  &kp ENTER  &cap_sen 6 MB1  &trans     &trans
             >;
 
             display-name = "nav-symb-en";
@@ -241,7 +241,7 @@
 &en ESC    &kp N1     &kp N2  &kp N3     &kp N4    &kp N5                             &kp N6     &kp N7          &kp N8     &kp N9         &kp N0     &kp BACKSPACE
 &kp TAB    &en ASTRK  &en AT  &en QMARK  &kp EXCL  &en PRCNT                          &en AMPS   &kp LEFT        &kp UP     &kp DOWN       &kp RIGHT  &kp DELETE
 &kp LSHFT  &en HASH   &en LT  &en CARET  &en GT    &en DOLLAR                         &en NUBS   &kp HOME        &kp PG_UP  &kp PAGE_DOWN  &kp END    &kp PSCRN
-                      &trans  &trans     &kp LGUI  &kp SPACE   &kp LCTRL    &kp LALT  &kp ENTER  &cap_sen 5 MB1  &trans     &trans
+                      &trans  &trans     &kp LGUI  &kp SPACE   &kp LCTRL    &kp LALT  &kp ENTER  &cap_sen 6 MB1  &trans     &trans
             >;
 
             label = "nav-sym-ru";
@@ -252,16 +252,26 @@
 &kp ESC    &kp F1  &kp F2   &kp F3   &kp F4    &trans                            &trans     &kp C_VOL_DN    &kp K_MUTE  &kp C_VOL_UP  &bt BT_SEL 0  &bt BT_SEL 1
 &kp TAB    &kp F5  &kp F6   &kp F7   &kp F8    &trans                            &trans     &trans          &trans      &trans        &bt BT_SEL 2  &bt BT_SEL 3
 &kp RSHFT  &kp F9  &kp F10  &kp F11  &kp F12   &trans                            &trans     &trans          &trans      &trans        &out OUT_TOG  &bt BT_CLR
-                   &trans   &trans   &kp LGUI  &kp SPACE  &kp LCTRL    &kp LALT  &kp ENTER  &cap_sen 5 MB1  &trans      &trans
+                   &trans   &trans   &kp LGUI  &kp SPACE  &kp LCTRL    &kp LALT  &kp ENTER  &cap_sen 6 MB1  &trans      &trans
             >;
 
             display-name = "system-fkeys";
         };
 
+        Shortcuts-LGUI {
+            display-name = "shortcuts-lgui";
+            bindings = <
+&kp ESC    &kp LG(B)  &none      &kp LG(A)  &kp LG(W)  &kp LG(Z)                         &none      &none           &none  &none  &none      &kp BSPC
+&kp TAB    &kp LG(N)  &kp LG(R)  &kp LG(T)  &kp LG(S)  &kp LG(F)                         &none      &none           &none  &none  &kp LG(I)  &kp LG(DOT)
+&kp LSHFT  &kp LG(Q)  &kp LG(X)  &none      &kp LG(C)  &kp LG(V)                         &none      &none           &none  &none  &none      &kp LG(COMMA)
+                      &none      &none      &none      &kp SPACE  &kp LCTRL    &kp LALT  &kp ENTER  &cap_sen 6 MB1  &none  &none
+            >;
+        };
+
         Mouse {
             bindings = <
 &trans  &trans  &trans  &mkp MB2  &mkp MB1  &trans                    &trans  &mkp MB1  &mkp MB2  &trans  &trans  &trans
-&trans  &trans  &trans  &mo 6     &mo 7     &trans                    &trans  &mo 7     &mo 6     &trans  &trans  &trans
+&trans  &trans  &trans  &mo 7     &mo 8     &trans                    &trans  &mo 8     &mo 7     &trans  &trans  &trans
 &trans  &trans  &trans  &trans    &mkp MB3  &trans                    &trans  &mkp MB3  &trans    &trans  &trans  &trans
                 &trans  &trans    &trans    &trans  &trans    &trans  &trans  &trans    &trans    &trans
             >;
