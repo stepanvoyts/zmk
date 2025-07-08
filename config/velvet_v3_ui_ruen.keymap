@@ -261,10 +261,10 @@
         Shortcuts-LGUI {
             display-name = "shortcuts-lgui";
             bindings = <
-&kp ESC    &kp LG(B)  &kp LG(L)  &kp LG(A)  &kp LG(W)  &kp LG(Z)                         &kp LG(J)  &kp LG(G)       &kp LG(O)  &kp LG(U)  &none      &kp BSPC
-&kp TAB    &kp LG(N)  &kp LG(R)  &kp LG(T)  &kp LG(S)  &kp LG(F)                         &kp LG(Y)  &kp LG(H)       &kp LG(D)  &kp LG(E)  &kp LG(I)  &kp LG(DOT)
-&kp LSHFT  &kp LG(Q)  &kp LG(X)  &kp LG(M)  &kp LG(C)  &kp LG(V)                         &kp LG(K)  &kp LG(P)       &none      &none      &none      &kp LG(COMMA)
-                      &none      &none      &none      &kp SPACE  &kp LCTRL    &kp LALT  &kp ENTER  &cap_sen 6 MB1  &none      &none
+&kp ESC      &kp LG(B)  &kp LG(L)  &kp LG(A)  &kp LG(W)  &kp LG(Z)                         &kp LG(J)  &kp LG(G)       &kp LG(O)  &kp LG(U)  &none      &kp LG(BSPC)
+&kp LG(TAB)  &kp LG(N)  &kp LG(R)  &kp LG(T)  &kp LG(S)  &kp LG(F)                         &kp LG(Y)  &kp LG(H)       &kp LG(D)  &kp LG(E)  &kp LG(I)  &kp LG(DOT)
+&kp LSHFT    &kp LG(Q)  &kp LG(X)  &kp LG(M)  &kp LG(C)  &kp LG(V)                         &kp LG(K)  &kp LG(P)       &none      &none      &none      &kp LG(COMMA)
+                        &none      &none      &none      &kp SPACE  &kp LCTRL    &kp LALT  &kp ENTER  &cap_sen 6 MB1  &none      &none
             >;
         };
 
