@@ -207,7 +207,7 @@
 &kp ESC    &kp B  &kp L   &kp D   &kp W  &kp Z                               &kp J        &kp F           &kp O   &kp U   &none  &kp BSPC
 &kp TAB    &kp N  &kp R   &kp T   &kp S  &kp G                               &kp Y        &kp H           &kp A   &kp E   &kp I  &kp DOT
 &kp LSHFT  &kp Q  &kp X   &kp M   &kp C  &kp V                               &kp K        &kp P           &none   &none   &none  &kp COMMA
-                  &trans  &trans  &mo 6  &lt 2 SPACE  &kp LCTRL    &kp LALT  &lt 4 ENTER  &cap_sen 7 MB1  &trans  &trans
+                  &trans  &trans  &mo 5  &lt 2 SPACE  &kp LCTRL    &kp LALT  &lt 4 ENTER  &cap_sen 7 MB1  &trans  &trans
             >;
 
             display-name = "en";
