@@ -24,6 +24,18 @@
     combos {
         compatible = "zmk,combos";
 
+        Lang-En {
+            bindings = <&layer_en>;
+            key-positions = <2 3>;
+            layers = <1>;
+        };
+
+        Lang-Ru {
+            bindings = <&layer_ru>;
+            key-positions = <2 3>;
+            layers = <0>;
+        };
+
         l-par {
             bindings = <&kp LPAR>;
             key-positions = <4 5>;
@@ -96,61 +108,49 @@
             layers = <0>;
         };
 
-        Lang-En {
-            bindings = <&layer_en>;
-            key-positions = <2 3>;
-            layers = <1>;
-        };
-
-        Lang-Ru {
-            bindings = <&layer_ru>;
-            key-positions = <2 3>;
-            layers = <0>;
-        };
-
-        l-bracket-ru {
+        ru-l-bracket {
             bindings = <&en LBKT>;
             key-positions = <17 16>;
             layers = <1>;
         };
 
-        r-bracket-ru {
+        ru-r-bracket {
             bindings = <&en RIGHT_BRACKET>;
             key-positions = <19 18>;
             layers = <1>;
         };
 
-        l-brace-ru {
+        ru-l-brace {
             bindings = <&en LBRC>;
             key-positions = <28 29>;
             layers = <1>;
         };
 
-        r-brace-ru {
+        ru-r-brace {
             bindings = <&en RBRC>;
             key-positions = <31 30>;
             layers = <1>;
         };
 
-        slash-ru {
+        ru-slash {
             bindings = <&en SLASH>;
             key-positions = <3 4>;
             layers = <1>;
         };
 
-        colon-semi-ru {
+        ru-colon-semi {
             bindings = <&en SEMI>;
             key-positions = <19 20>;
             layers = <1>;
         };
 
-        grave-tilde-ru {
+        ru-grave-tilde {
             bindings = <&en GRAVE>;
             key-positions = <27 28>;
             layers = <1>;
         };
 
-        s-d-quoute {
+        ru-s-d-quoute {
             bindings = <&en SQT>;
             key-positions = <31 32>;
             layers = <1>;
