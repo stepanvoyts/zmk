@@ -207,7 +207,7 @@
 &kp ESC    &kp B  &kp L   &kp D   &kp W  &kp Z                               &kp J        &kp F           &kp O   &kp U   &none  &kp BSPC
 &kp TAB    &kp N  &kp R   &kp T   &kp S  &kp G                               &kp Y        &kp H           &kp A   &kp E   &kp I  &kp DOT
 &kp LSHFT  &kp Q  &kp X   &kp M   &kp C  &kp V                               &kp K        &kp P           &none   &none   &none  &kp COMMA
-                  &trans  &trans  &mo 5  &lt 2 SPACE  &kp LCTRL    &kp LALT  &lt 4 ENTER  &cap_sen 7 MB1  &trans  &trans
+                  &trans  &trans  &mo 5  &lt 2 SPACE  &kp LCTRL    &kp LALT  &lt 4 ENTER  &cap_sen 8 MB1  &trans  &trans
             >;
 
             display-name = "en";
@@ -268,10 +268,20 @@
             >;
         };
 
+        ShortcutsCtrl {
+            display-name = "shortcuts-ctrl";
+            bindings = <
+&trans       &kp LG(B)  &kp LG(L)  &kp LG(A)  &kp LG(W)  &kp LG(Z)                        &kp LG(J)      &kp LG(G)  &kp LG(O)  &kp LG(U)  &none      &kp LG(BSPC)
+&kp LG(TAB)  &kp LC(N)  &kp LG(R)  &kp LG(T)  &kp LG(S)  &kp LG(F)                        &kp LG(Y)      &kp LG(H)  &kp LG(D)  &kp LG(E)  &kp LG(I)  &kp LG(DOT)
+&trans       &kp LG(Q)  &kp LG(X)  &kp LG(M)  &kp LG(C)  &kp LG(V)                        &kp LG(K)      &kp LG(P)  &none      &none      &none      &kp LG(COMMA)
+                        &trans     &trans     &kp LGUI   &kp LC(SPACE)  &trans    &trans  &kp LC(ENTER)  &trans     &trans     &trans
+            >;
+        };
+
         Mouse {
             bindings = <
 &none  &none  &none   &mkp MB2  &mkp MB1  &none                     &none   &mkp MB1  &mkp MB2  &none   &none  &none
-&none  &none  &none   &mo 7     &mo 8     &none                     &none   &mo 8     &mo 7     &none   &none  &none
+&none  &none  &none   &mo 8     &mo 9     &none                     &none   &mo 9     &mo 8     &none   &none  &none
 &none  &none  &none   &none     &mkp MB3  &none                     &none   &mkp MB3  &none     &none   &none  &none
               &trans  &trans    &trans    &trans  &trans    &trans  &trans  &trans    &trans    &trans
             >;
