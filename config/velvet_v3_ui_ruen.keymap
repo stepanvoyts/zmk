@@ -258,7 +258,7 @@
             display-name = "system-fkeys";
         };
 
-        Shortcuts-LGUI {
+        ShortcutsLGUI {
             display-name = "shortcuts-lgui";
             bindings = <
 &trans       &kp LG(B)  &kp LG(L)  &kp LG(A)  &kp LG(W)  &kp LG(Z)                    &kp LG(J)  &kp LG(G)  &kp LG(O)  &kp LG(U)  &none      &kp LG(BSPC)
