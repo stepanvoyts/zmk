@@ -261,10 +261,10 @@
         ShortcutsLGUI {
             display-name = "shortcuts-lgui";
             bindings = <
-&trans       &kp LG(B)  &kp LG(L)  &kp LG(A)  &kp LG(W)  &kp LG(Z)                    &kp LG(J)      &kp LG(G)  &kp LG(O)  &kp LG(U)  &none      &kp LG(BSPC)
-&kp LG(TAB)  &kp LG(N)  &kp LG(R)  &kp LG(T)  &kp LG(S)  &kp LG(F)                    &kp LG(Y)      &kp LG(H)  &kp LG(D)  &kp LG(E)  &kp LG(I)  &kp LG(DOT)
-&trans       &kp LG(Q)  &kp LG(X)  &kp LG(M)  &kp LG(C)  &kp LG(V)                    &kp LG(K)      &kp LG(P)  &none      &none      &none      &kp LG(COMMA)
-                        &trans     &trans     &trans     &trans     &trans    &trans  &kp LG(ENTER)  &trans     &trans     &trans
+&trans       &kp LG(B)  &kp LG(L)  &kp LG(A)  &kp LG(W)  &kp LG(Z)                        &kp LG(J)      &kp LG(G)  &kp LG(O)  &kp LG(U)  &none      &kp LG(BSPC)
+&kp LG(TAB)  &kp LG(N)  &kp LG(R)  &kp LG(T)  &kp LG(S)  &kp LG(F)                        &kp LG(Y)      &kp LG(H)  &kp LG(D)  &kp LG(E)  &kp LG(I)  &kp LG(DOT)
+&trans       &kp LG(Q)  &kp LG(X)  &kp LG(M)  &kp LG(C)  &kp LG(V)                        &kp LG(K)      &kp LG(P)  &none      &none      &none      &kp LG(COMMA)
+                        &trans     &trans     &trans     &kp LG(SPACE)  &trans    &trans  &kp LG(ENTER)  &trans     &trans     &trans
             >;
         };
 
