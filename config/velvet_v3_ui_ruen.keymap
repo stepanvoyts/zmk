@@ -281,9 +281,9 @@
         ShortcutsAlt {
             display-name = "shortcuts-alt";
             bindings = <
-&trans       &kp LC(B)  &kp LC(L)  &kp LC(A)  &kp LC(W)  &kp LC(Z)                        &kp LC(J)      &kp LC(G)  &kp LC(O)  &kp LC(U)  &none      &kp LC(BSPC)
-&kp LC(TAB)  &kp LA(N)  &kp LC(R)  &kp LC(T)  &kp LC(S)  &kp LC(F)                        &kp LC(Y)      &kp LC(H)  &kp LC(D)  &kp LC(E)  &kp LC(I)  &kp LC(DOT)
-&trans       &kp LC(Q)  &kp LC(X)  &kp LC(M)  &kp LC(C)  &kp LC(V)                        &kp LC(K)      &kp LC(P)  &none      &none      &none      &kp LC(COMMA)
+&trans       &kp LA(B)  &kp LA(L)  &kp LA(A)  &kp LA(W)  &kp LA(Z)                        &kp LA(J)      &kp LA(G)  &kp LA(O)  &kp LA(U)  &none      &kp LA(BSPC)
+&kp LA(TAB)  &kp LA(N)  &kp LA(R)  &kp LA(T)  &kp LA(S)  &kp LA(F)                        &kp LA(Y)      &kp LA(H)  &kp LA(D)  &kp LA(E)  &kp LA(I)  &kp LA(DOT)
+&trans       &kp LA(Q)  &kp LA(X)  &kp LA(M)  &kp LA(C)  &kp LA(V)                        &kp LA(K)      &kp LA(P)  &none      &none      &none      &kp LA(COMMA)
                         &trans     &trans     &trans     &kp LA(SPACE)  &trans    &trans  &kp LA(ENTER)  &trans     &trans     &trans
             >;
         };
