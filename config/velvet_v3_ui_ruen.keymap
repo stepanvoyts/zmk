@@ -24,6 +24,18 @@
     combos {
         compatible = "zmk,combos";
 
+        Lang-En {
+            bindings = <&layer_en>;
+            key-positions = <2 3>;
+            layers = <1>;
+        };
+
+        Lang-Ru {
+            bindings = <&layer_ru>;
+            key-positions = <2 3>;
+            layers = <0>;
+        };
+
         l-par {
             bindings = <&kp LPAR>;
             key-positions = <4 5>;
@@ -90,67 +102,55 @@
             layers = <0>;
         };
 
-        s-d-qoute {
+        s-d-quote {
             bindings = <&kp SQT>;
             key-positions = <31 32>;
             layers = <0>;
         };
 
-        Lang-En {
-            bindings = <&layer_en>;
-            key-positions = <2 3>;
-            layers = <1>;
-        };
-
-        Lang-Ru {
-            bindings = <&layer_ru>;
-            key-positions = <2 3>;
-            layers = <0>;
-        };
-
-        l-bracket-ru {
+        ru-l-bracket {
             bindings = <&en LBKT>;
             key-positions = <17 16>;
             layers = <1>;
         };
 
-        r-bracket-ru {
+        ru-r-bracket {
             bindings = <&en RIGHT_BRACKET>;
             key-positions = <19 18>;
             layers = <1>;
         };
 
-        l-brace-ru {
+        ru-l-brace {
             bindings = <&en LBRC>;
             key-positions = <28 29>;
             layers = <1>;
         };
 
-        r-brace-ru {
+        ru-r-brace {
             bindings = <&en RBRC>;
             key-positions = <31 30>;
             layers = <1>;
         };
 
-        slash-ru {
+        ru-slash {
             bindings = <&en SLASH>;
             key-positions = <3 4>;
             layers = <1>;
         };
 
-        colon-semi-ru {
+        ru-colon-semi {
             bindings = <&en SEMI>;
             key-positions = <19 20>;
             layers = <1>;
         };
 
-        grave-tilde-ru {
+        ru-grave-tilde {
             bindings = <&en GRAVE>;
             key-positions = <27 28>;
             layers = <1>;
         };
 
-        s-d-quoute {
+        ru-s-d-quote {
             bindings = <&en SQT>;
             key-positions = <31 32>;
             layers = <1>;
@@ -204,10 +204,10 @@
 
         English {
             bindings = <
-&kp ESC    &kp B  &kp L   &kp D   &kp W     &kp Z                               &kp J        &kp F           &kp O   &kp U   &trans  &kp BSPC
-&kp TAB    &kp N  &kp R   &kp T   &kp S     &kp G                               &kp Y        &kp H           &kp A   &kp E   &kp I   &kp DOT
-&kp LSHFT  &kp Q  &kp X   &kp M   &kp C     &kp V                               &kp K        &kp P           &trans  &trans  &trans  &kp COMMA
-                  &trans  &trans  &kp LGUI  &lt 2 SPACE  &kp LCTRL    &kp LALT  &lt 4 ENTER  &cap_sen 5 MB1  &trans  &trans
+&kp ESC    &kp B  &kp L   &kp D   &kp W  &kp Z                               &kp J        &kp F           &kp O   &kp U   &none  &kp BSPC
+&kp TAB    &kp N  &kp R   &kp T   &kp S  &kp G                               &kp Y        &kp H           &kp A   &kp E   &kp I  &kp DOT
+&kp LSHFT  &kp Q  &kp X   &kp M   &kp C  &kp V                               &kp K        &kp P           &none   &none   &none  &kp COMMA
+                  &trans  &trans  &mo 6  &lt 2 SPACE  &kp LCTRL    &kp LALT  &lt 4 ENTER  &cap_sen 7 MB1  &trans  &trans
             >;
 
             display-name = "en";
@@ -216,19 +216,19 @@
         Russian {
             display-name = "ru";
             bindings = <
-&kp ESC    &kp RU_CYRILLIC_SHORT_I  &kp RU_CYRILLIC_TSE   &kp RU_CYRILLIC_U   &kp RU_CYRILLIC_KA  &mt RU_CYRILLIC_IO RU_CYRILLIC_IE                         &kp RU_CYRILLIC_EN  &kp RU_CYRILLIC_GHE                              &mt RU_CYRILLIC_SHCHA RU_CYRILLIC_SHA  &kp RU_CYRILLIC_ZE  &kp RU_CYRILLIC_E    &kp BSPC
-&kp TAB    &kp RU_CYRILLIC_EF       &kp RU_CYRILLIC_YERU  &kp RU_CYRILLIC_VE  &kp RU_CYRILLIC_A   &kp RU_CYRILLIC_PE                                        &kp RU_CYRILLIC_ER  &kp RU_CYRILLIC_O                                &kp RU_CYRILLIC_EL                     &kp RU_CYRILLIC_DE  &kp RU_CYRILLIC_ZHE  &kp RU_DOT
-&kp LSHFT  &kp RU_CYRILLIC_YA       &kp RU_CYRILLIC_CHE   &kp RU_CYRILLIC_ES  &kp RU_CYRILLIC_EM  &kp RU_CYRILLIC_I                                         &kp RU_CYRILLIC_TE  &mt RU_CYRILLIC_HARD_SIGN RU_CYRILLIC_SOFT_SIGN  &kp RU_CYRILLIC_BE                     &kp RU_CYRILLIC_YU  &kp RU_CYRILLIC_HA   &kp RU_COMMA
-                                    &trans                &trans              &kp LGUI            &lt 3 SPACE                        &kp LCTRL    &kp LALT  &lt 4 ENTER         &cap_sen 5 MB1                                   &trans                                 &trans
+&trans  &kp RU_CYRILLIC_SHORT_I  &kp RU_CYRILLIC_TSE   &kp RU_CYRILLIC_U   &kp RU_CYRILLIC_KA  &mt RU_CYRILLIC_IO RU_CYRILLIC_IE                    &kp RU_CYRILLIC_EN  &kp RU_CYRILLIC_GHE                              &mt RU_CYRILLIC_SHCHA RU_CYRILLIC_SHA  &kp RU_CYRILLIC_ZE  &kp RU_CYRILLIC_E    &trans
+&trans  &kp RU_CYRILLIC_EF       &kp RU_CYRILLIC_YERU  &kp RU_CYRILLIC_VE  &kp RU_CYRILLIC_A   &kp RU_CYRILLIC_PE                                   &kp RU_CYRILLIC_ER  &kp RU_CYRILLIC_O                                &kp RU_CYRILLIC_EL                     &kp RU_CYRILLIC_DE  &kp RU_CYRILLIC_ZHE  &trans
+&trans  &kp RU_CYRILLIC_YA       &kp RU_CYRILLIC_CHE   &kp RU_CYRILLIC_EM  &kp RU_CYRILLIC_ES  &kp RU_CYRILLIC_I                                    &kp RU_CYRILLIC_TE  &mt RU_CYRILLIC_HARD_SIGN RU_CYRILLIC_SOFT_SIGN  &kp RU_CYRILLIC_BE                     &kp RU_CYRILLIC_YU  &kp RU_CYRILLIC_HA   &trans
+                                 &trans                &trans              &trans              &lt 3 SPACE                        &trans    &trans  &trans              &trans                                           &trans                                 &trans
             >;
         };
 
         NavigationAndSymbolsEn {
             bindings = <
-&kp ESC    &kp N1     &kp N2  &kp N3     &kp N4    &kp N5                              &kp N6     &kp N7          &kp N8     &kp N9     &kp N0     &kp BACKSPACE
-&kp TAB    &kp ASTRK  &kp AT  &kp QMARK  &kp EXCL  &kp PERCENT                         &kp AMPS   &kp LEFT        &kp UP     &kp DOWN   &kp RIGHT  &kp DELETE
-&kp LSHFT  &kp HASH   &kp LT  &kp CARET  &kp GT    &kp DOLLAR                          &kp NUBS   &kp HOME        &kp PG_UP  &kp PG_DN  &kp END    &kp PSCRN
-                      &trans  &trans     &kp LGUI  &kp SPACE    &kp LCTRL    &kp LALT  &kp ENTER  &cap_sen 5 MB1  &trans     &trans
+&trans  &kp N1     &kp N2  &kp N3     &kp N4    &kp N5                         &kp N6    &kp N7    &kp N8     &kp N9     &kp N0     &trans
+&trans  &kp ASTRK  &kp AT  &kp QMARK  &kp EXCL  &kp PERCENT                    &kp AMPS  &kp LEFT  &kp UP     &kp DOWN   &kp RIGHT  &kp DELETE
+&trans  &kp HASH   &kp LT  &kp CARET  &kp GT    &kp DOLLAR                     &kp NUBS  &kp HOME  &kp PG_UP  &kp PG_DN  &kp END    &kp PSCRN
+                   &trans  &trans     &trans    &trans       &trans    &trans  &trans    &trans    &trans     &trans
             >;
 
             display-name = "nav-symb-en";
@@ -238,10 +238,10 @@
         NavigationAndSymbolsRu {
             display-name = "nav-symb-ru";
             bindings = <
-&en ESC    &kp N1     &kp N2  &kp N3     &kp N4    &kp N5                             &kp N6     &kp N7          &kp N8     &kp N9         &kp N0     &kp BACKSPACE
-&kp TAB    &en ASTRK  &en AT  &en QMARK  &kp EXCL  &en PRCNT                          &en AMPS   &kp LEFT        &kp UP     &kp DOWN       &kp RIGHT  &kp DELETE
-&kp LSHFT  &en HASH   &en LT  &en CARET  &en GT    &en DOLLAR                         &en NUBS   &kp HOME        &kp PG_UP  &kp PAGE_DOWN  &kp END    &kp PSCRN
-                      &trans  &trans     &kp LGUI  &kp SPACE   &kp LCTRL    &kp LALT  &kp ENTER  &cap_sen 5 MB1  &trans     &trans
+&trans  &kp N1     &kp N2  &kp N3     &kp N4    &kp N5                        &kp N6    &kp N7    &kp N8     &kp N9         &kp N0     &trans
+&trans  &en ASTRK  &en AT  &en QMARK  &kp EXCL  &en PRCNT                     &en AMPS  &kp LEFT  &kp UP     &kp DOWN       &kp RIGHT  &kp DELETE
+&trans  &en HASH   &en LT  &en CARET  &en GT    &en DOLLAR                    &en NUBS  &kp HOME  &kp PG_UP  &kp PAGE_DOWN  &kp END    &kp PSCRN
+                   &trans  &trans     &trans    &trans      &trans    &trans  &trans    &trans    &trans     &trans
             >;
 
             label = "nav-sym-ru";
@@ -249,21 +249,31 @@
 
         SystemAndFKeys {
             bindings = <
-&kp ESC    &kp F1  &kp F2   &kp F3   &kp F4    &trans                            &trans     &kp C_VOL_DN    &kp K_MUTE  &kp C_VOL_UP  &bt BT_SEL 0  &bt BT_SEL 1
-&kp TAB    &kp F5  &kp F6   &kp F7   &kp F8    &trans                            &trans     &trans          &trans      &trans        &bt BT_SEL 2  &bt BT_SEL 3
-&kp RSHFT  &kp F9  &kp F10  &kp F11  &kp F12   &trans                            &trans     &trans          &trans      &trans        &out OUT_TOG  &bt BT_CLR
-                   &trans   &trans   &kp LGUI  &kp SPACE  &kp LCTRL    &kp LALT  &kp ENTER  &cap_sen 5 MB1  &trans      &trans
+&trans  &kp F1  &kp F2   &kp F3   &kp F4   &none                     &none   &kp C_VOL_DN  &kp K_MUTE  &kp C_VOL_UP  &bt BT_SEL 0  &bt BT_SEL 1
+&trans  &kp F5  &kp F6   &kp F7   &kp F8   &none                     &none   &none         &none       &none         &bt BT_SEL 2  &bt BT_SEL 3
+&trans  &kp F9  &kp F10  &kp F11  &kp F12  &none                     &none   &none         &none       &none         &out OUT_TOG  &bt BT_CLR
+                &trans   &trans   &trans   &trans  &trans    &trans  &trans  &trans        &trans      &trans
             >;
 
             display-name = "system-fkeys";
         };
 
+        Shortcuts-LGUI {
+            display-name = "shortcuts-lgui";
+            bindings = <
+&trans       &kp LG(B)  &kp LG(L)  &kp LG(A)  &kp LG(W)  &kp LG(Z)                    &kp LG(J)  &kp LG(G)  &kp LG(O)  &kp LG(U)  &none      &kp LG(BSPC)
+&kp LG(TAB)  &kp LG(N)  &kp LG(R)  &kp LG(T)  &kp LG(S)  &kp LG(F)                    &kp LG(Y)  &kp LG(H)  &kp LG(D)  &kp LG(E)  &kp LG(I)  &kp LG(DOT)
+&trans       &kp LG(Q)  &kp LG(X)  &kp LG(M)  &kp LG(C)  &kp LG(V)                    &kp LG(K)  &kp LG(P)  &none      &none      &none      &kp LG(COMMA)
+                        &trans     &trans     &trans     &trans     &trans    &trans  &trans     &trans     &trans     &trans
+            >;
+        };
+
         Mouse {
             bindings = <
-&trans  &trans  &trans  &mkp MB2  &mkp MB1  &trans                    &trans  &mkp MB1  &mkp MB2  &trans  &trans  &trans
-&trans  &trans  &trans  &mo 6     &mo 7     &trans                    &trans  &mo 7     &mo 6     &trans  &trans  &trans
-&trans  &trans  &trans  &trans    &mkp MB3  &trans                    &trans  &mkp MB3  &trans    &trans  &trans  &trans
-                &trans  &trans    &trans    &trans  &trans    &trans  &trans  &trans    &trans    &trans
+&none  &none  &none   &mkp MB2  &mkp MB1  &none                     &none   &mkp MB1  &mkp MB2  &none   &none  &none
+&none  &none  &none   &mo 7     &mo 8     &none                     &none   &mo 8     &mo 7     &none   &none  &none
+&none  &none  &none   &none     &mkp MB3  &none                     &none   &mkp MB3  &none     &none   &none  &none
+              &trans  &trans    &trans    &trans  &trans    &trans  &trans  &trans    &trans    &trans
             >;
 
             label = "mouse";
