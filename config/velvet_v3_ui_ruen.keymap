@@ -256,10 +256,10 @@
 
         English {
             bindings = <
-&kp ESC    &kp B  &kp L  &kp D  &kp W  &kp Z                        &kp J        &kp F           &kp O  &kp U  &none  &kp BSPC
-&kp TAB    &kp N  &kp R  &kp T  &kp S  &kp G                        &kp Y        &kp H           &kp A  &kp E  &kp I  &kp DOT
-&kp LSHFT  &kp Q  &kp X  &kp M  &kp C  &kp V                        &kp K        &kp P           &none  &none  &none  &kp COMMA
-                  &none  &none  &mo 5  &lt 2 SPACE  &mo 6    &mo 7  &lt 4 ENTER  &cap_sen 8 MB1  &none  &none
+&kp ESC    &kp B  &kp L  &kp D  &kp W            &kp Z                        &kp J        &kp F           &kp O  &kp U  &none  &kp BSPC
+&kp TAB    &kp N  &kp R  &kp T  &kp S            &kp G                        &kp Y        &kp H           &kp A  &kp E  &kp I  &kp DOT
+&kp LSHFT  &kp Q  &kp X  &kp M  &kp C            &kp V                        &kp K        &kp P           &none  &none  &none  &kp COMMA
+                  &none  &none  &hrml 0xE3 LGUI  &lt 2 SPACE  &mo 7    &mo 8  &lt 4 ENTER  &cap_sen 9 MB1  &none  &none
             >;
 
             display-name = "en";
@@ -309,6 +309,16 @@
             display-name = "system-fkeys";
         };
 
+        Shortcuts {
+            display-name = "shortcuts";
+            bindings = <
+&trans  &kp B  &kp L   &kp A   &kp W   &kp Z                     &kp J   &kp G   &kp O   &kp U   &none  &kp LG(BSPC)
+&trans  &kp N  &kp R   &kp T   &kp S   &kp F                     &kp Y   &kp H   &kp D   &kp E   &kp I  &kp DOT
+&trans  &kp Q  &kp X   &kp M   &kp C   &kp V                     &kp K   &kp P   &none   &none   &none  &kp COMMA
+               &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
         ShortcutsLGui {
             display-name = "shortcuts-lgui";
             bindings = <
@@ -342,7 +352,7 @@
         Mouse {
             bindings = <
 &none  &none  &none   &mkp MB2  &mkp MB1  &none                     &none   &mkp MB1  &mkp MB2  &none   &none  &none
-&none  &none  &none   &mo 9     &mo 10    &none                     &none   &mo 10    &mo 9     &none   &none  &none
+&none  &none  &none   &mo 10    &mo 11    &none                     &none   &mo 11    &mo 10    &none   &none  &none
 &none  &none  &none   &none     &mkp MB3  &none                     &none   &mkp MB3  &none     &none   &none  &none
               &trans  &trans    &trans    &trans  &trans    &trans  &trans  &trans    &trans    &trans
             >;
