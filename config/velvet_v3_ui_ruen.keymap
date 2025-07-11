@@ -256,10 +256,10 @@
 
         English {
             bindings = <
-&kp ESC    &kp B  &kp L  &kp D  &kp W            &kp Z                        &kp J        &kp F           &kp O  &kp U  &none  &kp BSPC
-&kp TAB    &kp N  &kp R  &kp T  &kp S            &kp G                        &kp Y        &kp H           &kp A  &kp E  &kp I  &kp DOT
-&kp LSHFT  &kp Q  &kp X  &kp M  &kp C            &kp V                        &kp K        &kp P           &none  &none  &none  &kp COMMA
-                  &none  &none  &hrml 0xE3 LGUI  &lt 2 SPACE  &mo 7    &mo 8  &lt 4 ENTER  &cap_sen 9 MB1  &none  &none
+&kp ESC    &kp B  &kp L  &kp D  &kp W            &kp Z                                             &kp J        &kp F           &kp O  &kp U  &none  &kp BSPC
+&kp TAB    &kp N  &kp R  &kp T  &kp S            &kp G                                             &kp Y        &kp H           &kp A  &kp E  &kp I  &kp DOT
+&kp LSHFT  &kp Q  &kp X  &kp M  &kp C            &kp V                                             &kp K        &kp P           &none  &none  &none  &kp COMMA
+                  &none  &none  &hrml 0xE3 LGUI  &lt 2 SPACE  &hrml 0xE0 LCTRL    &hrml 0xE2 LALT  &lt 4 ENTER  &cap_sen 6 MB1  &none  &none
             >;
 
             display-name = "en";
@@ -277,10 +277,10 @@
 
         NavigationAndSymbolsEn {
             bindings = <
-&trans  &kp N1     &kp N2  &kp N3     &kp N4    &kp N5                              &kp N6    &kp N7    &kp N8     &kp N9     &kp N0     &trans
-&trans  &kp ASTRK  &kp AT  &kp QMARK  &kp EXCL  &kp PERCENT                         &kp AMPS  &kp LEFT  &kp UP     &kp DOWN   &kp RIGHT  &kp DELETE
-&trans  &kp HASH   &kp LT  &kp CARET  &kp GT    &kp DOLLAR                          &kp NUBS  &kp HOME  &kp PG_UP  &kp PG_DN  &kp END    &kp PSCRN
-                   &trans  &trans     &kp LGUI  &trans       &kp LCTRL    &kp LALT  &trans    &trans    &trans     &trans
+&trans  &kp N1     &kp N2  &kp N3     &kp N4    &kp N5                         &kp N6    &kp N7    &kp N8     &kp N9     &kp N0     &trans
+&trans  &kp ASTRK  &kp AT  &kp QMARK  &kp EXCL  &kp PERCENT                    &kp AMPS  &kp LEFT  &kp UP     &kp DOWN   &kp RIGHT  &kp DELETE
+&trans  &kp HASH   &kp LT  &kp CARET  &kp GT    &kp DOLLAR                     &kp NUBS  &kp HOME  &kp PG_UP  &kp PG_DN  &kp END    &kp PSCRN
+                   &trans  &trans     &trans    &trans       &trans    &trans  &trans    &trans    &trans     &trans
             >;
 
             display-name = "nav-symb-en";
@@ -291,10 +291,10 @@
             label = "nav-sym-ru";
             display-name = "nav-symb-en";
             bindings = <
-&trans  &kp N1     &kp N2  &kp N3     &kp N4    &kp N5                             &kp N6    &kp N7    &kp N8     &kp N9     &kp N0     &trans
-&trans  &en ASTRK  &en AT  &en QMARK  &kp EXCL  &en PRCNT                          &en AMPS  &kp LEFT  &kp UP     &kp DOWN   &kp RIGHT  &kp DELETE
-&trans  &en HASH   &en LT  &en CARET  &en GT    &en DOLLAR                         &en NUBS  &kp HOME  &kp PG_UP  &kp PG_DN  &kp END    &kp PSCRN
-                   &trans  &trans     &kp LGUI  &trans      &kp LCTRL    &kp LALT  &trans    &trans    &trans     &trans
+&trans  &kp N1     &kp N2  &kp N3     &kp N4    &kp N5                        &kp N6    &kp N7    &kp N8     &kp N9     &kp N0     &trans
+&trans  &en ASTRK  &en AT  &en QMARK  &kp EXCL  &en PRCNT                     &en AMPS  &kp LEFT  &kp UP     &kp DOWN   &kp RIGHT  &kp DELETE
+&trans  &en HASH   &en LT  &en CARET  &en GT    &en DOLLAR                    &en NUBS  &kp HOME  &kp PG_UP  &kp PG_DN  &kp END    &kp PSCRN
+                   &trans  &trans     &trans    &trans      &trans    &trans  &trans    &trans    &trans     &trans
             >;
         };
 
@@ -319,40 +319,10 @@
             >;
         };
 
-        ShortcutsLGui {
-            display-name = "shortcuts-lgui";
-            bindings = <
-&trans       &kp LG(B)  &kp LG(L)  &kp LG(A)  &kp LG(W)  &kp LG(Z)                        &kp LG(J)      &kp LG(G)  &kp LG(O)  &kp LG(U)  &none      &kp LG(BSPC)
-&kp LG(TAB)  &kp LG(N)  &kp LG(R)  &kp LG(T)  &kp LG(S)  &kp LG(F)                        &kp LG(Y)      &kp LG(H)  &kp LG(D)  &kp LG(E)  &kp LG(I)  &kp LG(DOT)
-&trans       &kp LG(Q)  &kp LG(X)  &kp LG(M)  &kp LG(C)  &kp LG(V)                        &kp LG(K)      &kp LG(P)  &none      &none      &none      &kp LG(COMMA)
-                        &trans     &trans     &trans     &kp LG(SPACE)  &trans    &trans  &kp LG(ENTER)  &trans     &trans     &trans
-            >;
-        };
-
-        ShortcutsCtrl {
-            display-name = "shortcuts-ctrl";
-            bindings = <
-&trans       &kp LC(B)  &kp LC(L)  &kp LC(A)  &kp LC(W)  &kp LC(Z)                        &kp LC(J)      &kp LC(G)  &kp LC(O)  &kp LC(U)  &none      &kp LC(BSPC)
-&kp LC(TAB)  &kp LC(N)  &kp LC(R)  &kp LC(T)  &kp LC(S)  &kp LC(F)                        &kp LC(Y)      &kp LC(H)  &kp LC(D)  &kp LC(E)  &kp LC(I)  &kp LC(DOT)
-&trans       &kp LC(Q)  &kp LC(X)  &kp LC(M)  &kp LC(C)  &kp LC(V)                        &kp LC(K)      &kp LC(P)  &none      &none      &none      &kp LC(COMMA)
-                        &trans     &trans     &trans     &kp LC(SPACE)  &trans    &trans  &kp LC(ENTER)  &trans     &trans     &trans
-            >;
-        };
-
-        ShortcutsAlt {
-            display-name = "shortcuts-alt";
-            bindings = <
-&trans       &kp LA(B)  &kp LA(L)  &kp LA(A)  &kp LA(W)  &kp LA(Z)                        &kp LA(J)      &kp LA(G)  &kp LA(O)  &kp LA(U)  &none      &kp LA(BSPC)
-&kp LA(TAB)  &kp LA(N)  &kp LA(R)  &kp LA(T)  &kp LA(S)  &kp LA(F)                        &kp LA(Y)      &kp LA(H)  &kp LA(D)  &kp LA(E)  &kp LA(I)  &kp LA(DOT)
-&trans       &kp LA(Q)  &kp LA(X)  &kp LA(M)  &kp LA(C)  &kp LA(V)                        &kp LA(K)      &kp LA(P)  &none      &none      &none      &kp LA(COMMA)
-                        &trans     &trans     &trans     &kp LA(SPACE)  &trans    &trans  &kp LA(ENTER)  &trans     &trans     &trans
-            >;
-        };
-
         Mouse {
             bindings = <
 &none  &none  &none   &mkp MB2  &mkp MB1  &none                     &none   &mkp MB1  &mkp MB2  &none   &none  &none
-&none  &none  &none   &mo 10    &mo 11    &none                     &none   &mo 11    &mo 10    &none   &none  &none
+&none  &none  &none   &mo 7     &mo 8     &none                     &none   &mo 8     &mo 7     &none   &none  &none
 &none  &none  &none   &none     &mkp MB3  &none                     &none   &mkp MB3  &none     &none   &none  &none
               &trans  &trans    &trans    &trans  &trans    &trans  &trans  &trans    &trans    &trans
             >;
