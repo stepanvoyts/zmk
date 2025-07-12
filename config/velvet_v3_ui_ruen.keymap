@@ -241,9 +241,9 @@
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
             bindings =
-                <&macro_param_1to1 &key_on MACRO_PLACEHOLDER &layer_on 2>,
+                <&macro_param_1to1 &key_on MACRO_PLACEHOLDER &layer_on 3>,
                 <&macro_pause_for_release>,
-                <&macro_param_1to1 &key_off MACRO_PLACEHOLDER &layer_off 2>;
+                <&macro_param_1to1 &key_off MACRO_PLACEHOLDER &layer_off 3>;
 
             label = "Mod Layer";
             wait-ms = <0>;
@@ -259,7 +259,7 @@
 &kp ESC    &kp B  &kp L  &kp D  &kp W            &kp Z                                             &kp J        &kp F           &kp O  &kp U  &none  &kp BSPC
 &kp TAB    &kp N  &kp R  &kp T  &kp S            &kp G                                             &kp Y        &kp H           &kp A  &kp E  &kp I  &kp DOT
 &kp LSHFT  &kp Q  &kp X  &kp M  &kp C            &kp V                                             &kp K        &kp P           &none  &none  &none  &kp COMMA
-                  &none  &none  &hrml 0xE3 LGUI  &lt 3 SPACE  &hrml 0xE0 LCTRL    &hrml 0xE2 LALT  &lt 5 ENTER  &cap_sen 6 MB1  &none  &none
+                  &none  &none  &hrml 0xE3 LGUI  &lt 4 SPACE  &hrml 0xE0 LCTRL    &hrml 0xE2 LALT  &lt 5 ENTER  &cap_sen 6 MB1  &none  &none
             >;
 
             display-name = "en";
@@ -278,7 +278,7 @@
         Shortcuts {
             display-name = "shortcuts";
             bindings = <
-&trans  &kp B  &kp L   &kp A   &kp W   &kp Z                     &kp J   &kp G   &kp O   &kp U   &none  &kp LG(BSPC)
+&trans  &kp B  &kp L   &kp A   &kp W   &kp Z                     &kp J   &kp G   &kp O   &kp U   &none  &trans
 &trans  &kp N  &kp R   &kp T   &kp S   &kp F                     &kp Y   &kp H   &kp D   &kp E   &kp I  &kp DOT
 &trans  &kp Q  &kp X   &kp M   &kp C   &kp V                     &kp K   &kp P   &none   &none   &none  &kp COMMA
                &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
