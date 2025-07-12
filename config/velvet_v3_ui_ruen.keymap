@@ -66,7 +66,7 @@
         Lang-En {
             bindings = <&layer_en>;
             key-positions = <2 3>;
-            layers = <1>;
+            layers = <2>;
         };
 
         Lang-Ru {
@@ -78,13 +78,13 @@
         l-par {
             bindings = <&kp LPAR>;
             key-positions = <4 5>;
-            layers = <0 1>;
+            layers = <0 2>;
         };
 
         r-par {
             bindings = <&kp RPAR>;
             key-positions = <7 6>;
-            layers = <0 1>;
+            layers = <0 2>;
         };
 
         l-bracket {
@@ -120,13 +120,13 @@
         equals-plus {
             bindings = <&kp EQUAL>;
             key-positions = <16 15>;
-            layers = <0 1>;
+            layers = <0 2>;
         };
 
         minus-underscore {
             bindings = <&kp MINUS>;
             key-positions = <7 8>;
-            layers = <0 1>;
+            layers = <0 2>;
         };
 
         colon-semi {
@@ -150,49 +150,49 @@
         ru-l-bracket {
             bindings = <&en LBKT>;
             key-positions = <17 16>;
-            layers = <1>;
+            layers = <2>;
         };
 
         ru-r-bracket {
             bindings = <&en RIGHT_BRACKET>;
             key-positions = <19 18>;
-            layers = <1>;
+            layers = <2>;
         };
 
         ru-l-brace {
             bindings = <&en LBRC>;
             key-positions = <28 29>;
-            layers = <1>;
+            layers = <2>;
         };
 
         ru-r-brace {
             bindings = <&en RBRC>;
             key-positions = <31 30>;
-            layers = <1>;
+            layers = <2>;
         };
 
         ru-slash {
             bindings = <&en SLASH>;
             key-positions = <3 4>;
-            layers = <1>;
+            layers = <2>;
         };
 
         ru-colon-semi {
             bindings = <&en SEMI>;
             key-positions = <19 20>;
-            layers = <1>;
+            layers = <2>;
         };
 
         ru-grave-tilde {
             bindings = <&en GRAVE>;
             key-positions = <27 28>;
-            layers = <1>;
+            layers = <2>;
         };
 
         ru-s-d-quote {
             bindings = <&en SQT>;
             key-positions = <31 32>;
-            layers = <1>;
+            layers = <2>;
         };
     };
 
@@ -221,7 +221,7 @@
         layer_ru: layer_ru {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&to 1 &to_ru>;
+            bindings = <&to 2 &to_ru>;
             label = "LAYER_RU";
         };
 
@@ -241,9 +241,9 @@
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
             bindings =
-                <&macro_param_1to1 &key_on MACRO_PLACEHOLDER &layer_on 3>,
+                <&macro_param_1to1 &key_on MACRO_PLACEHOLDER &layer_on 1>,
                 <&macro_pause_for_release>,
-                <&macro_param_1to1 &key_off MACRO_PLACEHOLDER &layer_off 3>;
+                <&macro_param_1to1 &key_off MACRO_PLACEHOLDER &layer_off 1>;
 
             label = "Mod Layer";
             wait-ms = <0>;
@@ -265,6 +265,15 @@
             display-name = "en";
         };
 
+        Shortcuts {
+            bindings = <
+&trans  &trans  &trans  &kp A   &trans  &trans                    &trans  &kp G   &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &kp F                     &trans  &trans  &kp D   &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+                &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
         Russian {
             display-name = "ru";
             bindings = <
@@ -272,16 +281,6 @@
 &trans  &kp RU_CYRILLIC_EF       &kp RU_CYRILLIC_YERU  &kp RU_CYRILLIC_VE  &kp RU_CYRILLIC_A   &kp RU_CYRILLIC_PE                                   &kp RU_CYRILLIC_ER  &kp RU_CYRILLIC_O                                &kp RU_CYRILLIC_EL                     &kp RU_CYRILLIC_DE  &kp RU_CYRILLIC_ZHE  &kp RU_DOT
 &trans  &kp RU_CYRILLIC_YA       &kp RU_CYRILLIC_CHE   &kp RU_CYRILLIC_EM  &kp RU_CYRILLIC_ES  &kp RU_CYRILLIC_I                                    &kp RU_CYRILLIC_TE  &mt RU_CYRILLIC_HARD_SIGN RU_CYRILLIC_SOFT_SIGN  &kp RU_CYRILLIC_BE                     &kp RU_CYRILLIC_YU  &kp RU_CYRILLIC_HA   &kp RU_COMMA
                                  &trans                &trans              &trans              &lt 4 SPACE                        &trans    &trans  &trans              &trans                                           &trans                                 &trans
-            >;
-        };
-
-        Shortcuts {
-            display-name = "shortcuts";
-            bindings = <
-&trans  &kp B  &kp L   &kp A   &kp W   &kp Z                     &kp J   &kp G   &kp O   &kp U   &none  &trans
-&trans  &kp N  &kp R   &kp T   &kp S   &kp F                     &kp Y   &kp H   &kp D   &kp E   &kp I  &kp DOT
-&trans  &kp Q  &kp X   &kp M   &kp C   &kp V                     &kp K   &kp P   &none   &none   &none  &kp COMMA
-               &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
             >;
         };
 
