@@ -330,7 +330,7 @@
             bindings = <
 &trans  &kp N1     &kp N2  &kp N3     &kp N4    &kp N5                              &kp N6    &kp N7    &kp N8     &kp N9     &kp N0     &trans
 &trans  &kp ASTRK  &kp AT  &kp QMARK  &kp EXCL  &kp PERCENT                         &kp AMPS  &kp LEFT  &kp UP     &kp DOWN   &kp RIGHT  &kp DELETE
-&trans  &kp HASH   &kp LT  &kp CARET  &kp GT    &kp DOLLAR                          &kp NUBS  &kp HOME  &kp PG_UP  &kp PG_DN  &kp END    &kp PSCRN
+&trans  &kp HASH   &kp LT  &kp CARET  &kp GT    &kp DOLLAR                          &kp BSLH  &kp HOME  &kp PG_UP  &kp PG_DN  &kp END    &kp PSCRN
                    &trans  &trans     &kp LGUI  &trans       &kp LCTRL    &kp LALT  &trans    &trans    &trans     &trans
             >;
 
@@ -344,7 +344,7 @@
             bindings = <
 &trans  &kp N1     &kp N2  &kp N3     &kp N4    &kp N5                        &kp N6    &kp N7    &kp N8     &kp N9     &kp N0     &trans
 &trans  &en ASTRK  &en AT  &en QMARK  &kp EXCL  &en PRCNT                     &en AMPS  &kp LEFT  &kp UP     &kp DOWN   &kp RIGHT  &kp DELETE
-&trans  &en HASH   &en LT  &en CARET  &en GT    &en DOLLAR                    &en NUBS  &kp HOME  &kp PG_UP  &kp PG_DN  &kp END    &kp PSCRN
+&trans  &en HASH   &en LT  &en CARET  &en GT    &en DOLLAR                    &en BSLH  &kp HOME  &kp PG_UP  &kp PG_DN  &kp END    &kp PSCRN
                    &trans  &trans     &trans    &trans      &trans    &trans  &trans    &trans    &trans     &trans
             >;
         };
