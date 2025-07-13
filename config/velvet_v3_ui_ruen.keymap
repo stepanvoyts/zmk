@@ -57,6 +57,13 @@
             #binding-cells = <1>;
             toggle-mode = "off";
         };
+
+        shcps: shcps {
+            compatible = "zmk,behavior-tap-dance";
+            label = "SHCPS";
+            #binding-cells = <0>;
+            bindings = <&sk LSHIFT>, <&kp CLCK>;
+        };
     };
 
     combos {
@@ -255,10 +262,10 @@
 
         English {
             bindings = <
-&kp ESC    &kp B  &kp L  &kp D  &kp W            &kp Z                                             &kp J        &kp F           &kp O  &kp U  &none  &kp BSPC
-&kp TAB    &kp N  &kp R  &kp T  &kp S            &kp G                                             &kp Y        &kp H           &kp A  &kp E  &kp I  &kp DOT
-&kp LSHFT  &kp Q  &kp X  &kp M  &kp C            &kp V                                             &kp K        &kp P           &none  &none  &none  &kp COMMA
-                  &none  &none  &hrml 0xE3 LGUI  &lt 3 SPACE  &hrml 0xE0 LCTRL    &hrml 0xE2 LALT  &lt 5 ENTER  &cap_sen 6 MB1  &none  &none
+&kp ESC  &kp B  &kp L  &kp D  &kp W            &kp Z                                             &kp J        &kp F           &kp O  &kp U  &none  &kp BSPC
+&kp TAB  &kp N  &kp R  &kp T  &kp S            &kp G                                             &kp Y        &kp H           &kp A  &kp E  &kp I  &kp DOT
+&shcps   &kp Q  &kp X  &kp M  &kp C            &kp V                                             &kp K        &kp P           &none  &none  &none  &kp COMMA
+                &none  &none  &hrml 0xE3 LGUI  &lt 3 SPACE  &hrml 0xE0 LCTRL    &hrml 0xE2 LALT  &lt 5 ENTER  &cap_sen 6 MB1  &none  &none
             >;
 
             display-name = "en";
