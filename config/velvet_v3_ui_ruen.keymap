@@ -321,7 +321,7 @@
             bindings = <
 &trans  &kp B  &kp L   &kp A   &kp W   &kp Z                     &kp J   &kp G   &kp O   &kp U   &none  &trans
 &trans  &kp N  &kp R   &kp T   &kp S   &kp F                     &kp Y   &kp H   &kp D   &kp E   &kp I  &trans
-&trans  &kp Q  &kp X   &kp M   &kp C   &kp V                     &kp K   &kp P   &none   &none   &none  &trans
+&trans  &kp Q  &kp X   &kp M   &kp C   &kp V                     &kp K   &kp P   &none   &none   &none  &kp COMMA
                &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
             >;
         };
