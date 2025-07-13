@@ -277,10 +277,10 @@
 
         Shortcuts {
             bindings = <
-&trans  &kp B   &kp L   &kp A   &kp W   &kp Z                     &kp J   &kp G   &kp O   &kp U   &trans  &trans
-&trans  &kp N   &kp R   &kp T   &kp S   &kp F                     &kp Y   &kp H   &kp D   &kp I   &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-                &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &kp B  &kp L   &kp A   &kp W   &kp Z                     &kp J   &kp G   &kp O   &kp U   &trans  &trans
+&trans  &kp N  &kp R   &kp T   &kp S   &kp F                     &kp Y   &kp H   &kp D   &kp I   &trans  &trans
+&trans  &kp Q  &kp X   &kp M   &kp C   &kp V                     &kp K   &kp P   &trans  &trans  &trans  &trans
+               &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
             >;
         };
 
