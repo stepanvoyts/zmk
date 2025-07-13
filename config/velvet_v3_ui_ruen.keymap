@@ -158,7 +158,7 @@
         grave-tilde {
             bindings = <&kp GRAVE>;
             key-positions = <27 28>;
-            layers = <0>;
+            layers = <0 1>;
         };
 
         s-d-quote {
