@@ -37,17 +37,6 @@
             #binding-cells = <1>;
         };
 
-        hrml_en: hrml_en {
-            compatible = "zmk,behavior-hold-tap";
-            label = "Home Row Mod Layer En";
-            bindings = <&ml_en>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <150>;
-            require-prior-idle-ms = <20>;
-            flavor = "balanced";
-        };
-
         key_on: key_on {
             compatible = "zmk,behavior-key-toggle";
             label = "KEY_ON";
@@ -72,6 +61,17 @@
             compatible = "zmk,behavior-hold-tap";
             label = "HRML_RU";
             bindings = <&ml_ru>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <150>;
+            require-prior-idle-ms = <20>;
+            flavor = "balanced";
+        };
+
+        hrml_en: hrml_en {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HRML_EN";
+            bindings = <&ml_en>, <&kp>;
 
             #binding-cells = <2>;
             tapping-term-ms = <150>;
@@ -289,10 +289,10 @@
 
         English {
             bindings = <
-&kp ESC  &kp B  &kp L  &kp D  &kp W               &kp Z                                                   &kp J        &kp F         &kp O  &kp U  &none  &kp BSPC
-&kp TAB  &kp N  &kp R  &kp T  &kp S               &kp G                                                   &kp Y        &kp H         &kp A  &kp E  &kp I  &kp DOT
-&shcps   &kp Q  &kp X  &kp M  &kp C               &kp V                                                   &kp K        &kp P         &none  &none  &none  &kp COMMA
-                &none  &none  &hrml_en 0xE3 LGUI  &lt 4 SPACE  &hrml_en 0xE0 LCTRL    &hrml_en 0xE2 LALT  &lt 6 ENTER  &cap_sen 7 7  &none  &none
+&kp ESC  &kp B  &kp L  &kp D  &kp W               &kp Z                                                    &kp J        &kp F         &kp O  &kp U  &none  &kp BSPC
+&kp TAB  &kp N  &kp R  &kp T  &kp S               &kp G                                                    &kp Y        &kp H         &kp A  &kp E  &kp I  &kp DOT
+&shcps   &kp Q  &kp X  &kp M  &kp C               &kp V                                                    &kp K        &kp P         &none  &none  &none  &kp COMMA
+                &none  &none  &hrml_en LGUI LGUI  &lt 4 SPACE  &hrml_en LCTRL LCTRL    &hrml_en LALT LALT  &lt 6 ENTER  &cap_sen 7 7  &none  &none
             >;
 
             display-name = "en";
