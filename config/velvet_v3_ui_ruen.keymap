@@ -10,6 +10,8 @@
 
 &mt { tapping-term-ms = <400>; };
 
+&sk { quick-release; };
+
 / {
     behaviors {
         cap_sen: cap_sen {
