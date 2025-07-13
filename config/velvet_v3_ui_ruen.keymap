@@ -259,7 +259,7 @@
 &kp ESC    &kp B  &kp L  &kp D  &kp W            &kp Z                                             &kp J        &kp F           &kp O  &kp U  &none  &kp BSPC
 &kp TAB    &kp N  &kp R  &kp T  &kp S            &kp G                                             &kp Y        &kp H           &kp A  &kp E  &kp I  &kp DOT
 &kp LSHFT  &kp Q  &kp X  &kp M  &kp C            &kp V                                             &kp K        &kp P           &none  &none  &none  &kp COMMA
-                  &none  &none  &hrml 0xE3 LGUI  &lt 4 SPACE  &hrml 0xE0 LCTRL    &hrml 0xE2 LALT  &lt 5 ENTER  &cap_sen 6 MB1  &none  &none
+                  &none  &none  &hrml 0xE3 LGUI  &lt 3 SPACE  &hrml 0xE0 LCTRL    &hrml 0xE2 LALT  &lt 5 ENTER  &cap_sen 6 MB1  &none  &none
             >;
 
             display-name = "en";
@@ -320,10 +320,10 @@
 
         Mouse {
             bindings = <
-&none  &none  &none   &mkp MB2  &mkp MB1  &none                     &none   &mkp MB1  &mkp MB2  &none   &none  &none
-&none  &none  &none   &mo 7     &mo 8     &none                     &none   &mo 8     &mo 7     &none   &none  &none
-&none  &none  &none   &none     &mkp MB3  &none                     &none   &mkp MB3  &none     &none   &none  &none
-              &trans  &trans    &trans    &trans  &trans    &trans  &trans  &trans    &trans    &trans
+&trans  &none  &none     &none     &none     &none                     &none   &none     &none     &none     &none  &trans
+&trans  &mo 7  &mkp MB2  &mkp MB3  &mkp MB1  &none                     &none   &mkp MB1  &mkp MB3  &mkp MB2  &mo 7  &none
+&trans  &none  &none     &none     &none     &none                     &none   &none     &none     &none     &none  &none
+               &trans    &trans    &trans    &trans  &trans    &trans  &trans  &trans    &trans    &trans
             >;
 
             label = "mouse";
@@ -338,17 +338,6 @@
             >;
 
             label = "mouse-scroll";
-        };
-
-        Sniper {
-            bindings = <
-&trans  &trans  &trans  &mkp MB2  &mkp MB1  &trans                    &trans  &mkp MB1  &mkp MB2  &trans  &trans  &trans
-&trans  &trans  &trans  &trans    &trans    &trans                    &trans  &trans    &trans    &trans  &trans  &trans
-&trans  &trans  &trans  &trans    &mkp MB3  &trans                    &trans  &mkp MB3  &trans    &trans  &trans  &trans
-                &trans  &trans    &trans    &trans  &trans    &trans  &trans  &trans    &trans    &trans
-            >;
-
-            label = "mouse-sniper";
         };
     };
 };
