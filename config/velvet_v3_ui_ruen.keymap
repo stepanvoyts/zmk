@@ -66,6 +66,7 @@
             tapping-term-ms = <150>;
             require-prior-idle-ms = <20>;
             flavor = "balanced";
+            hold-while-undecided;
         };
 
         hrml_en: hrml_en {
