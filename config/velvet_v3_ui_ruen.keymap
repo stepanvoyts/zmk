@@ -3,9 +3,7 @@
 #include <input/processors.dtsi>
 #include <zephyr/dt-bindings/input/input-event-codes.h>
 #include <behaviors.dtsi>
-#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/pointing.h>
 
 &mt { flavor = "tap-preferred"; };
@@ -50,16 +48,9 @@
             toggle-mode = "off";
         };
 
-        shcps: shcps {
-            compatible = "zmk,behavior-tap-dance";
-            label = "SHCPS";
-            #binding-cells = <0>;
-            bindings = <&kp LSHIFT>, <&kp CLCK>;
-        };
-
-        hrml_ru: hrml_ru {
+        shrtct_ru: shrtct_ru {
             compatible = "zmk,behavior-hold-tap";
-            label = "HRML_RU";
+            label = "SHRTCT_RU";
             bindings = <&ml_ru>, <&kp>;
 
             #binding-cells = <2>;
@@ -69,15 +60,26 @@
             hold-while-undecided;
         };
 
-        hrml_en: hrml_en {
+        shrtct_en: shrtct_en {
             compatible = "zmk,behavior-hold-tap";
-            label = "HRML_EN";
+            label = "SHRTCT_EN";
             bindings = <&ml_en>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <150>;
+            tapping-term-ms = <250>;
             require-prior-idle-ms = <20>;
             flavor = "balanced";
+            hold-while-undecided;
+        };
+
+        shft_stck: shft_stck {
+            compatible = "zmk,behavior-sticky-key";
+            label = "SHFT_STCK";
+            bindings = <&kp>;
+            #binding-cells = <1>;
+            lazy;
+            release-after-ms = <600>;
+            quick-release;
         };
     };
 
@@ -290,10 +292,10 @@
 
         English {
             bindings = <
-&kp ESC    &kp B  &kp L  &kp D  &kp W               &kp Z                                                    &kp J        &kp F         &kp O  &kp U  &none  &kp BSPC
-&kp TAB    &kp N  &kp R  &kp T  &kp S               &kp G                                                    &kp Y        &kp H         &kp A  &kp E  &kp I  &kp DOT
-&sk LSHFT  &kp Q  &kp X  &kp M  &kp C               &kp V                                                    &kp K        &kp P         &none  &none  &none  &kp COMMA
-                  &none  &none  &hrml_en LGUI LGUI  &lt 4 SPACE  &hrml_en LCTRL LCTRL    &hrml_en LALT LALT  &lt 6 ENTER  &cap_sen 7 7  &none  &none
+&kp ESC           &kp B  &kp L  &kp D  &kp W                 &kp Z                                                        &kp J        &kp F         &kp O  &kp U  &none  &kp BSPC
+&kp TAB           &kp N  &kp R  &kp T  &kp S                 &kp G                                                        &kp Y        &kp H         &kp A  &kp E  &kp I  &kp DOT
+&shft_stck LSHFT  &kp Q  &kp X  &kp M  &kp C                 &kp V                                                        &kp K        &kp P         &none  &none  &none  &kp COMMA
+                         &none  &none  &shrtct_en LGUI LGUI  &lt 4 SPACE  &shrtct_en LCTRL LCTRL    &shrtct_en LALT LALT  &lt 6 ENTER  &cap_sen 7 7  &none  &none
             >;
 
             display-name = "en";
@@ -311,10 +313,10 @@
         Russian {
             display-name = "ru";
             bindings = <
-&trans  &kp RU_CYRILLIC_SHORT_I  &kp RU_CYRILLIC_TSE   &kp RU_CYRILLIC_U   &kp RU_CYRILLIC_KA  &mt RU_CYRILLIC_IO RU_CYRILLIC_IE                                              &kp RU_CYRILLIC_EN  &kp RU_CYRILLIC_GHE                              &mt RU_CYRILLIC_SHCHA RU_CYRILLIC_SHA  &kp RU_CYRILLIC_ZE  &kp RU_CYRILLIC_E    &trans
-&trans  &kp RU_CYRILLIC_EF       &kp RU_CYRILLIC_YERU  &kp RU_CYRILLIC_VE  &kp RU_CYRILLIC_A   &kp RU_CYRILLIC_PE                                                             &kp RU_CYRILLIC_ER  &kp RU_CYRILLIC_O                                &kp RU_CYRILLIC_EL                     &kp RU_CYRILLIC_DE  &kp RU_CYRILLIC_ZHE  &kp RU_DOT
-&trans  &kp RU_CYRILLIC_YA       &kp RU_CYRILLIC_CHE   &kp RU_CYRILLIC_EM  &kp RU_CYRILLIC_ES  &kp RU_CYRILLIC_I                                                              &kp RU_CYRILLIC_TE  &mt RU_CYRILLIC_HARD_SIGN RU_CYRILLIC_SOFT_SIGN  &kp RU_CYRILLIC_BE                     &kp RU_CYRILLIC_YU  &kp RU_CYRILLIC_HA   &kp RU_COMMA
-                                 &trans                &trans              &hrml_ru LGUI LGUI  &lt 5 SPACE                        &hrml_ru LCTRL LCTRL    &hrml_ru LALT LALT  &trans              &trans                                           &trans                                 &trans
+&trans  &kp RU_CYRILLIC_SHORT_I  &kp RU_CYRILLIC_TSE   &kp RU_CYRILLIC_U   &kp RU_CYRILLIC_KA    &mt RU_CYRILLIC_IO RU_CYRILLIC_IE                                                  &kp RU_CYRILLIC_EN  &kp RU_CYRILLIC_GHE                              &mt RU_CYRILLIC_SHCHA RU_CYRILLIC_SHA  &kp RU_CYRILLIC_ZE  &kp RU_CYRILLIC_E    &trans
+&trans  &kp RU_CYRILLIC_EF       &kp RU_CYRILLIC_YERU  &kp RU_CYRILLIC_VE  &kp RU_CYRILLIC_A     &kp RU_CYRILLIC_PE                                                                 &kp RU_CYRILLIC_ER  &kp RU_CYRILLIC_O                                &kp RU_CYRILLIC_EL                     &kp RU_CYRILLIC_DE  &kp RU_CYRILLIC_ZHE  &kp RU_DOT
+&trans  &kp RU_CYRILLIC_YA       &kp RU_CYRILLIC_CHE   &kp RU_CYRILLIC_EM  &kp RU_CYRILLIC_ES    &kp RU_CYRILLIC_I                                                                  &kp RU_CYRILLIC_TE  &mt RU_CYRILLIC_HARD_SIGN RU_CYRILLIC_SOFT_SIGN  &kp RU_CYRILLIC_BE                     &kp RU_CYRILLIC_YU  &kp RU_CYRILLIC_HA   &kp RU_COMMA
+                                 &trans                &trans              &shrtct_ru LGUI LGUI  &lt 5 SPACE                        &shrtct_ru LCTRL LCTRL    &shrtct_ru LALT LALT  &trans              &trans                                           &trans                                 &trans
             >;
         };
 
@@ -352,9 +354,9 @@
 
         SystemAndFKeys {
             bindings = <
-&trans  &kp F1  &kp F2   &kp F3   &kp F4   &none                     &none   &none         &none       &none         &bt BT_SEL 0  &bt BT_SEL 1
-&trans  &kp F5  &kp F6   &kp F7   &kp F8   &none                     &none   &kp C_VOL_DN  &kp K_MUTE  &kp C_VOL_UP  &bt BT_SEL 2  &bt BT_SEL 3
-&trans  &kp F9  &kp F10  &kp F11  &kp F12  &none                     &none   &none         &none       &none         &out OUT_TOG  &bt BT_CLR
+&trans  &kp F1  &kp F2   &kp F3   &kp F4   &none                     &none   &none         &none       &none         &none  &none
+&trans  &kp F5  &kp F6   &kp F7   &kp F8   &none                     &none   &kp C_VOL_DN  &kp K_MUTE  &kp C_VOL_UP  &none  &none
+&trans  &kp F9  &kp F10  &kp F11  &kp F12  &none                     &none   &none         &none       &none         &none  &none
                 &trans   &trans   &trans   &trans  &trans    &trans  &trans  &trans        &trans      &trans
             >;
 
