@@ -89,6 +89,24 @@
             tapping-term-ms = <150>;
             flavor = "tap-preferred";
         };
+
+        sl_fast: sl_fast {
+            compatible = "zmk,behavior-sticky-key";
+            label = "SL_FAST";
+            bindings = <&sl>;
+            #binding-cells = <1>;
+            release-after-ms = <150>;
+            quick-release;
+        };
+
+        sk_fast: sk_fast {
+            compatible = "zmk,behavior-sticky-key";
+            label = "SK_FAST";
+            bindings = <&kp>;
+            #binding-cells = <1>;
+            quick-release;
+            release-after-ms = <150>;
+        };
     };
 
     combos {
@@ -297,7 +315,7 @@
         sk_layer_en: sk_layer_en {
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
-            bindings = <&macro_param_1to1 &sk MACRO_PLACEHOLDER &sl 1>;
+            bindings = <&macro_param_1to1 &sk_fast MACRO_PLACEHOLDER &sl_fast 1>;
             label = "SK_LAYER_EN";
             wait-ms = <0>;
             tap-ms = <0>;
@@ -306,7 +324,7 @@
         sk_layer_ru: sk_layer_ru {
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
-            bindings = <&macro_param_1to1 &sk MACRO_PLACEHOLDER &sl 1>;
+            bindings = <&macro_param_1to1 &sk_fast MACRO_PLACEHOLDER &sl_fast 3>;
             label = "SK_LAYER_RU";
             wait-ms = <0>;
             tap-ms = <0>;
