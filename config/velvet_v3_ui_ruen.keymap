@@ -278,7 +278,9 @@
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
             bindings =
-                <&to_en &macro_param_1to1 &kp MACRO_PLACEHOLDER>,
+                <&macro_wait_time 30>,
+                <&to_en>,
+                <&macro_param_1to1 &kp MACRO_PLACEHOLDER>,
                 <&macro_wait_time 10>,
                 <&to_ru>,
                 <&macro_wait_time 10>;
